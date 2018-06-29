@@ -1,0 +1,43 @@
+BODY {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; RIGHT: 0px; LEFT: 0px;  BORDER-LEFT: 0px; BOTTOM: 0px; BORDER-BOTTOM: 0px; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TOP: 0px; BACKGROUND-COLOR: #6593c4
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #005595; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #6593c4; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.norep {
+	BACKGROUND-REPEAT: no-repeat
+}
+.liteninput {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.bredde {
+	WIDTH: 120px
+}
+LI {
+	LIST-STYLE: square url(http://www.modernsoftwaregroup.com/New_images/bullet.gif) outside
+}
+UL {
+	LEFT: -15px
+}
+.td1 {
+	background-color: #005595;
+	height: 20px;
+	border: 1px solid #FFFFFF;
+}
+.td2 {
+	background-color: #005595;
+	height: 29px;
+	border: 1px solid #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-left: 9px;
+}

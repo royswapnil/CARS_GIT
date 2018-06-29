@@ -1,0 +1,3 @@
+ UPDATE TBL_UTIL_MOD_DETAILS
+ SET NAME_URL = '/Transactions/frmWOJobDetails.aspx?TabId=2'
+ WHERE NAME_SCR = 'Add' AND NAME_MODULE = 'WORK ORDER'

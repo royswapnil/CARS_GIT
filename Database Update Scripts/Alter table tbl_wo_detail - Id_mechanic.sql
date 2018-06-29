@@ -1,0 +1,1 @@
+Alter table tbl_wo_detail add ID_MECHANIC varchar(100)

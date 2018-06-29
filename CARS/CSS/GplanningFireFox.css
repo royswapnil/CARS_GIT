@@ -1,0 +1,112 @@
+﻿
+.emRow{
+   border-bottom-width: 1px;
+   border-bottom-style:  outset;
+   border-bottom-color: #000000;
+
+   border-left-width: 0px;
+   border-left-style: hidden;
+   border-left-color: #ffffff;
+   
+   border-top-width: 0px;
+   border-top-style: none;
+   border-top-color: #ffffff;
+   
+   border-right-width: 0px;
+   border-right-style: none;
+   border-right-color: #ffffff;
+	
+   
+}
+
+.Row{
+   border-width: 1px 1px 1px 1px;
+	border-style: solid solid solid solid;
+	border-color: black black black black;
+	background-color: white;
+ 
+}
+
+.hdrRow{
+  border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: Black;
+    
+   border-left-width: 1px;
+   border-left-style: solid;
+   border-left-color: Black;
+    
+   border-top-width: thin;
+   border-top-style: none;
+   border-top-color: #000000;
+   
+   border-right-width: thin;
+   border-right-style: none;
+   border-right-color: #000000;
+ background: #E7E4D8;
+}
+
+.fCell{
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: #000000;
+    
+   border-left-width: 1px;
+   border-left-style: solid;
+   border-left-color: #000000;
+   
+   border-top-width: 1px;
+   border-top-style: solid;
+   border-top-color: #000000;
+   
+   border-right-width: 1px;
+   border-right-style: solid;
+   border-right-color: #000000;
+   font: 11px Arial, helvetica, sans-serif;
+   font-weight: bold;
+   color: Black;
+   background: #E7E4D8;
+   padding-left:5px;
+}
+
+
+
+
+.tvwCss {
+	font: 10px Arial, helvetica, sans-serif;
+	color: #000000;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: hidden;
+	border-bottom-style: hidden;
+	border-left-style: hidden;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #B8B8B8;
+	border-left-color: #FFFFFF;
+	border-top-width: 1px;
+	border-top-style: hidden;
+	border-top-color: #F7D7DE;
+	border-collapse :collapse;
+}
+TABLE.tvwCss TR TD{
+	border-bottom-width: 1px;
+	border-bottom-style: hidden;
+	border-bottom-color: #E5E5E5;
+}
+TABLE.tvwCss TR TD A
+{
+	font: 11px Arial, helvetica, sans-serif;
+	color: #191970;
+	text-decoration: NONE;
+	font-weight:normal;
+	padding-left:5px;
+	padding-right:5px;
+	
+}
+
+TABLE.tvwCss TR TD A:hover{
+	color: #ff0000;
+	text-decoration: underline;
+	
+}

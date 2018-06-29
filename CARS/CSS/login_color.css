@@ -1,0 +1,66 @@
+.login_color {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.text_css {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	padding-right: 3px;
+	padding-left: 7px;
+}
+.text_bt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.sborder {
+	border: 1px solid #FF9966;
+}
+.header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	background-image: url(images/snavingation_top.gif);
+	border: 1px solid #B8B1A3;
+}
+.header_sbt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	background-image: url(images/snavi.gif);
+	border-top: 1px none;
+	border-right: 1px none #B8B1A3;
+	border-bottom: 1px none #B8B1A3;
+	border-left: 1px none #B8B1A3;
+}
+.edit_sbo {
+	border: 1px solid #CEC7C1;
+}
+.header_sub {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #BECDDC;
+	height: 18px;
+	background-color: #E6ECF1;
+}
+.inner_text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #005595;
+	text-decoration: none;
+}

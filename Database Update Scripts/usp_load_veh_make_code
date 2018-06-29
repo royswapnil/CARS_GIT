@@ -1,0 +1,31 @@
+IF NOT EXISTS (
+	SELECT * 
+	FROM sys.objects 
+	WHERE type = 'P' AND name = 'usp_load_veh_make_code'
+	)
+	BEGIN
+		EXEC('CREATE PROCEDURE [dbo].[usp_load_veh_make_code] 
+			  AS 
+			  BEGIN 
+				  SET NOCOUNT ON; 
+			  END'
+		)
+	END
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER OFF
+GO
+
+-- =============================================
+-- Author:		Martin Omnes (MO)
+-- Create date: 2015/09/09
+-- Description:	Fetching vehicle data into vehicledetail page 
+-- =============================================
+ 
+    
+ALTER procedure [dbo].[usp_load_veh_make_code]
+as
+begin
+--select id_make, ID_MAKE_NAME from tbl_mas_make
+select Make_Code_Govt as id_make, Desc_Govt as ID_MAKE_NAME from TBL_MAP_MAKE_GOVT_ABS
+end

@@ -1,0 +1,56 @@
+IF NOT EXISTS (
+	SELECT * 
+	FROM sys.objects 
+	WHERE type = 'P' AND name = 'USP_FETCH_VEHICLE_STATUS'
+	)
+	BEGIN
+		EXEC('CREATE PROCEDURE [dbo].[USP_FETCH_VEHICLE_STATUS] 
+			  AS 
+			  BEGIN 
+				  SET NOCOUNT ON; 
+			  END'
+		)
+	END
+IF NOT EXISTS(
+	SELECT *
+    FROM   INFORMATION_SCHEMA.TABLES
+    WHERE  TABLE_NAME = '[TBL_MAS_VEHICLE_SETTINGS]'
+           AND TABLE_SCHEMA = 'dbo'
+	)
+BEGIN
+CREATE TABLE [dbo].[TBL_MAS_VEHICLE_SETTINGS](
+	[Seq_No] [int] IDENTITY(1,1) NOT NULL,
+	[SettingsType] [varchar](max) NULL,
+	[SettingsCode] [int] NULL,
+	[SettingDescription] [varchar](max) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+END
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Martin Omnes (MO)
+-- Create date: 2015/09/09
+-- Description:	Fetching vehicle data into vehicledetail page 
+-- =============================================
+
+ALTER Procedure [dbo].[USP_FETCH_VEHICLE_STATUS]  
+
+as  
+BEGIN  
+	
+	SELECT   
+				SettingsCode as SettingsCode,
+				SettingDescription as SettingDescription
+		FROM   
+				TBL_MAS_VEHICLE_SETTINGS 
+		WHERE	SettingsType='Status'
+		ORDER BY 
+				SettingsCode
+	
+	END 
+
+
+

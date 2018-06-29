@@ -1,0 +1,7 @@
+-- =============================================
+-- Author:		Thomas Won Nyheim (TWN)
+-- Create date: 2016/09/02
+-- Description:	Extends decription column on the function description
+-- =============================================
+ALTER TABLE TBL_MAS_CUSTOMER_CONTACT_PERSON_FUNCTION
+ALTER COLUMN FUNCTION_DESCRIPTION varchar(25) NOT NULL

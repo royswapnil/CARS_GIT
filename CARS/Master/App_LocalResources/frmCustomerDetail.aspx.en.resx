@@ -1,0 +1,2323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblPayTypeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCardtypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvPaytermsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Label23Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCategoryResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvBranchTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtContactType2Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtPermAdd2Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBranchTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCredlimitResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCompanyPerson2Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvWorkshopNoResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCategoryTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvHourlyMarkupResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBox8Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbImmobilizerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWantedMileageFromResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label22Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashMiddleNameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtColorResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCustTempPasswordResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvNoEnvResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbElseatResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBillCityResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBranchResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBranchCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtLastContactResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCredCardTypeTextResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbDieselfilterResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWashMiddleNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Search for customer (Phone, name, place, etc.)</value>
+  </data>
+  <data name="chkWashFirstNameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbMetallicResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkContactTypeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesGroupCodeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroMobileResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedPriceToResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtPermCountyResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblLastContactResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWashLastNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvVendorResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedMileageToResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkEinvoiceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCardtypeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblCustomerTemplateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashSsnNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvExtCustNoResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAllyeartiresResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="liPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkNoPhonesaleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkWashMobileResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvExtCustNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbOriginalphoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbTowinghitchResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCurCodeTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCategoryCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbKeylessResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehRegNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCurCodeValueResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbParksensorrearResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbSteelbeamsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbElseatmemoryResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbAlloywheelssummerResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCredCardTypeTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbCruisecontrolResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvSalesgroupResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWashEniroLastNameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashDateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCategoryCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSumBonusResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvCurCodeCodeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroBillAddressResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbSkylightResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashBillAddressResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkInvEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCategoryRefResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbAirsuspensionResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ddlCustGroupResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehVinResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbElectricResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAdvNoGmResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNBFmemberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvLabourDiscountResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvRemainingCreditResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvPayTermsDaysResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehRegYearResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehMakeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMiddlenameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAlarmResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvBranchResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbTVResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblOtherFuelResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvEmployeesResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbClimateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEniroIdResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBonusmemberResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbDieselResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehModelResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesGroupCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAirconditionResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtPermAdd2Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashZipCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbOriginalphoneResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvLabourDiscountResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblCompanyResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWashZipPlaceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCompanyPersonFindResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMakeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvVendorNoResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCategoryRefResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvTruckResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCreditLimitResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblContactType2Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkSameAddResource1.Text" xml:space="preserve">
+    <value>Same as visit address</value>
+  </data>
+  <data name="txtAdvRemainingCreditResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvCustBatchInvResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbTVResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkSameAddResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbRainsensorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvVendorResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehModelResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCategoryNoteResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNextContact1Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbElseatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermCountyResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillCountyResource1.Text" xml:space="preserve">
+    <value>County</value>
+  </data>
+  <data name="txtContactSign1Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtNBFmemberResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvPayTermsTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehMakeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCredCardTypeCustNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCreditLimitResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWashLocalBornResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvCustBatchInvResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBalanceResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSumBonusResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvWorkshopNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbMetallicResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvSparesDiscountResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedPriceToResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvGeneralDiscountResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalFirstNameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPayTypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnNorwayResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehRegYearResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbTemp1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvEmployeesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPermAddResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCategoryResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCurCodeTextResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtPermCountryResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPermZipResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblColorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWantedPriceFromResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TextBox10Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalZipPlaceResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbEngineheaterResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactType1Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TextBox8Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CheckBox34Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWantedYearToResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvWorkshopNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtPermAdd1Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalPhoneResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashBillAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWashEniroFirstNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroPhoneResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvGeneralDiscountResource1.Text" xml:space="preserve">
+    <value>General discount %</value>
+  </data>
+  <data name="lblPermCityResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbComputerResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnEnglandResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPermZipResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSparesDiscountResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashZipPlaceResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtNBFmemberResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashFirstNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesGroupInvResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBillCountryResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAntiskidResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbAirbagfrontResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWashEniroZipPlaceResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanPasswordResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSsnNoResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCategoryRefResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblNextContact1Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAlloywheelssummerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCategoryResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblCustomerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWantedYearToResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWarrantyClaimResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvTruckResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvPayTermsTextResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblContactSign2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanLnameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCategoryRefResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalZipCodeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvLabourDiscountResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvBonusmemberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblContactSign2Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbSummerwheelsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashBornResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWantedPriceToResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvHourlyrateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBillCountyResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroSsnNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroBornResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbRadioCDResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblNBFmemberResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCustomerResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCustIdResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbHandsfreeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCustomerResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalBillAddressResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvRemainingCreditResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDeathDateResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanFnameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TextBox10Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtEniroResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvNoEnvResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPermCountryResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCurCodeTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvSalesgroupResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanDeptResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvVendorNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCustTempPasswordResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWantedYearFromResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvPaytermsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotes2Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCompanyPerson2Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbDVDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvGeneralDiscountResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSparesDiscountResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvPayTermsTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBranchRefResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBirthDateResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvCustInactiveResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbAllyeartiresResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkNBFmemberResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCredCardTypeCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCompanyPersonResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtEniroResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvVendorResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbCentrallockResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvSalesGroupTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanPasswordResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbGasResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbNavigationResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOtherFuelResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtPermCountryResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvInvoicelevelResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvWarrantyResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashVisitAddressResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvCustFactoringResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashZipPlaceResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalZipCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillAddResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbRemtowinghitchResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbColoredglassResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblContactSign1Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkNoEmailResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWashVisitAdressResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkPrivOrSubResource1.Text" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="lblWashZipCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbLuggagecompcoverResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbABSbrakesResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehRefNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalVisitAddressResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesGroupVatResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashFirstNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvVendorNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCategoryTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvBranchTextResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvBranchRefResource1.Text" xml:space="preserve">
+    <value>Referance</value>
+  </data>
+  <data name="lblWashMobileResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastnameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesGroupInvResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Label24Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkNoSmsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCompanyPersonResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSsnNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbElMirrorsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanFnameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehModelResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWantedModelResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvEmployeesResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashVisitAddressResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnNorwayResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehRefNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbLevellingResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehMileageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWashLocalVisitAddressResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkOrdconfEmailResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanPhoneResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtUsedBoughtResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehRegDateResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtNewBoughtResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehMakeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCompanyPersonResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="liNotesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvPayTermsCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TextBox7Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvInvoicelevelResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkWashLastNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbWinterwheelsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvPayTermsDaysResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashPhoneResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtContactSign1Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtContactSign2Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedPriceFromResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvPayTermsCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbComputerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbKeylessResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVehVinResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCurrcodeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblUsedBoughtResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblCompanyResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbElMirrorsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWashMobileResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalZipPlaceResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAirsuspensionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLastContactResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCurrcodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtOtherFuelResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblUsedBoughtResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="drpContactTypeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvExtCustNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvFreeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedMileageFromResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCurCodeValueResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtNextContact1Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblContactType1Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSumBonusResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalBornResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPermCityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWantedMileageToResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVehVinResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbEngineheaterResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBranchCodeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvPayTermsCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvCurCodeCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvPaytermsResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBillAdd1Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbFullservicehistoryResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblSalesmanResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbAnnualfeepaidResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblContactType1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvNewCustomerResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ddlCustomerTemplateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesGroupVatResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCustomerResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbSkylightResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblContactSign1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanLnameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvEmployeesResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAlarmResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCompanyPersonResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvCategoryNoteResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbParksensorfrontResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblNewBoughtResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbTemp2Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehMileageResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvLabourDiscountResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashSsnNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWantedYearToResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAlloyrimswinterResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAdvCustIgnoreInvResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvSalesGroupCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedYearToResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWantedPriceFromResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkEinvoiceResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanLoginResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnLituania.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvVendorNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBillCountyResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkNoMarketingResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvPriceTypeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroMiddleNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbRemtowinghitchResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvBranchTextResource1.Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="lblEmployeesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvSparesDiscountResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvPayTermsDaysResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvRemainingCreditResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashBillAddressResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtColorResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvBankgiroResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvWorkshopNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCurCodeTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbMultifuncsteeringResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvHourlyrateResource1.Text" xml:space="preserve">
+    <value>Hourly price rate</value>
+  </data>
+  <data name="cbDifflockResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbElectricResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvVendorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvBranchNoteResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CheckBox34Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvBranchCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPermCountyResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSsnNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbDVDResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvBankgiroResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashDateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehRegDateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanLoginResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbGasolineResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbClimateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanPhoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWantedMakeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtOtherFuelResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehRefNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVehMileageResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashSsnNoResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillCityResource1.Text" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="lblWantedPriceToResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbTemp3Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPermCountyResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAdvCustInactiveResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashBornResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnEnglandResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ddlPayTypeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesGroupVatResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvDebitorgroupResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashSsnNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVehRegNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVehRegNoResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbLevellingResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbElWindowsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCredCardTypeTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBirthDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbCentrallockResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillCountryResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rbTemp1Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanFnameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanLnameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbCruisecontrolResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashBillAddressResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWarrantyClaimResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvExtCustNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWantedYearFromResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWashLocalSsnNoResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashMiddleNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehModelResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvBranchCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDeathDateResource1.Text" xml:space="preserve">
+    <value>Death date</value>
+  </data>
+  <data name="cbFullservicehistoryResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBillZipResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesgroupResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvPriceTypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastnameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroFirstNameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCredCardTypeCustNoResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblCompanyNameHeadResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbParksensorrearResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroLastNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvWarrantyResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbSportingseatsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashMiddleNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvPayTermsCodeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbDieselfilterResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesGroupTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillZipResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbAirconditionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvCategoryCodeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbTowinghitchResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehRegYearResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroSsnNoResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedMakeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnLituania.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBillAdd2Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtContactType1Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSumBonusResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesGroupInvResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvTruckResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCustomerIdResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashVisitAdressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbHandsfreeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBillCityResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanDeptResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Label23Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckBox33Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbXenonResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvSumOrderResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroVisitAddressResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblFirstnameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Label24Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAirbagsideResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkWashLastNameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalMobileResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanLnameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvDebitorgroupResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblEmployeesResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBranchNoteResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehRegYearResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashZipCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanFnameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSumInvoiceResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbCDchangerResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanPasswordResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanDeptResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbTemp3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lHeadResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCompanyPersonFindResource1.Text" xml:space="preserve">
+    <value>Search below for a company to add...</value>
+  </data>
+  <data name="txtWashLocalBillAddressResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalSsnNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehMileageResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lHeadResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCategoryTextResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvDebitorgroupResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvCategoryResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbParksensorfrontResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNextContact1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvNewCustomerResource1.Text" xml:space="preserve">
+    <value>New customer</value>
+  </data>
+  <data name="chkNoPhonesaleResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSumInvoiceResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAirbagfrontResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCredCardTypeTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSumInvoiceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbDifflockResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtMiddlenameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rbTemp2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkAdvCustIgnoreInvResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblCompanyNameHeadResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashBornResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBirthDateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbCDchangerResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtPermCityResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkNoHumaneorgResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkInvEmailResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvFreeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbServoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotesResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CheckBox33Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAntiskidResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCategoryTextResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesmanPhoneResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvInvoicelevelResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehRegNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBranchNoteResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbArmrestsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermZipResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbXenonResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbWinterwheelsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvGeneralDiscountResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbNavigationResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvHourlyMarkupResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvWarrantyResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbHeatedseatsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbRoofSkirailsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvSalesGroupCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCategoryCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvCardtypeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalLastNameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvBranchResource1.Text" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="ddlPayTermsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillAddResource1.Text" xml:space="preserve">
+    <value>Postal address</value>
+  </data>
+  <data name="lblAdvPayTermsTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDeathDateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvBonusmemberResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbSummerwheelsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkContactTypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWantedMileageFromResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCredCardTypeCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWashEniroMiddleNameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkProspectResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanDeptResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvSalesmanPhoneResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSalesgroupResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWantedMileageToResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvNoGmResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvPaytermsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbRoofSkirailsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesGroupInvResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvFreeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedMileageFromResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehRegDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWashLocalPhoneResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtPermZipResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvFreeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesGroupVatResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbDieselResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbABSbrakesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label22Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotes2Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblCustomerTemplateResource1.Text" xml:space="preserve">
+    <value>Choose template</value>
+  </data>
+  <data name="txtAdvSalesGroupTextResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCustIdResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkAdvCustFactoringResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFirstnameResource1.Text" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="lblWantedModelResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtLastContactResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAnnualfeepaidResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBillAdd1Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAirbagsideResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalMiddleNameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBalanceResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSsnNoResource1.Text" xml:space="preserve">
+    <value>Org.No</value>
+  </data>
+  <data name="txtFirstnameResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblSalesmanResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtFirstnameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblLastnameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvHourlyrateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCategoryNoteResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtContactType2Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbAlloyrimswinterResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashZipPlaceResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSumInvoiceResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCurCodeCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCurCodeValueResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblColorResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillCityResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblMiddlenameResource1.Text" xml:space="preserve">
+    <value>Middle name</value>
+  </data>
+  <data name="chkNoMarketingResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPermCityResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroVisitAddressResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCredCardTypeCodeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSalesGroupTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbTractionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbRainsensorResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvWarrantyResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvTruckResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbRadioCDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkNoSmsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBranchRefResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblLastnameResource1.Text" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="cbCargorailsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvBranchNoteResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBirthDateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroMobileResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBillAdd2Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBonusmemberResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashDateResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBillCountryResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashPhoneResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TextBox9Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroZipCodeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPermCountryResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblBillCountyResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtCustomerIdResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbCargorailsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtBillZipResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkNoEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbMultifuncsteeringResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbLuggagecompcoverResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbElseatmemoryResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbColoredglassResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtPermAdd1Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtMiddlenameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Label1Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbSteelbeamsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehVinResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCardtypeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbArmrestsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashPhoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvInvoicelevelResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbSportingseatsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPrivOrSubResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtNewBoughtResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroPhoneResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvBranchResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkNoHumaneorgResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblPermAddResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNewBoughtResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalMobileResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashZipCodeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PageResource2.Title" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblContactType2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDeathDateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroZipPlaceResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedYearFromResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbServoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvSumOrderResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalLastNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCredCardTypeCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalMiddleNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillCountryResource1.Text" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="lblAdvPayTermsDaysResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedYearFromResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashLocalFirstNameResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehicleListResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvBalanceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWashPhoneResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbElWindowsResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMakeResource1.Text" xml:space="preserve">
+    <value>Make</value>
+  </data>
+  <data name="txtAdvHourlyrateResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvCurCodeCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashBornResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCurrcodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBox7Resource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvDebitorgroupResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvBalanceResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCurrcodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TextBox9Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehMakeResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtUsedBoughtResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblVehicleListResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvSumOrderResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAdvCredCardTypeCustNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbHeatedseatsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbImmobilizerResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkNBFmemberResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactSign2Resource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblBillZipResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbTractionResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkProspectResource1.Text" xml:space="preserve">
+    <value>Prospect</value>
+  </data>
+  <data name="txtEniroIdResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCategoryNoteResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvBranchRefResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCredlimitResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroZipCodeResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCredCardTypeCustNoResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedModelResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblWashDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvNewCustomerResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedMileageToResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtNotesResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblAdvNewCustomerResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkOrdconfEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWantedPriceFromResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehRegDateResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWashEniroBornResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbGasResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAdvSumOrderResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtAdvCurCodeValueResource1.ToolTip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtWantedModelResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtVehRefNoResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="chkWashMobileResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cbGasolineResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWashEniroBillAddressResource1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+</root>

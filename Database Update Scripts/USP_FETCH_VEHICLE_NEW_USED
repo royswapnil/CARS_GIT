@@ -1,0 +1,56 @@
+IF NOT EXISTS (
+	SELECT * 
+	FROM sys.objects 
+	WHERE type = 'P' AND name = 'USP_FETCH_VEHICLE_NEW_USED'
+	)
+	BEGIN
+		EXEC('CREATE PROCEDURE [dbo].[USP_FETCH_VEHICLE_NEW_USED] 
+			  AS 
+			  BEGIN 
+				  SET NOCOUNT ON; 
+			  END'
+		)
+	END
+
+IF NOT EXISTS(
+	SELECT *
+    FROM   INFORMATION_SCHEMA.TABLES
+    WHERE  TABLE_NAME = 'TBL_MAS_VEHICLE_REFNO'
+           AND TABLE_SCHEMA = 'dbo'
+	)
+BEGIN
+CREATE TABLE [dbo].[TBL_MAS_VEHICLE_REFNO](
+	[Seq_No] [int] IDENTITY(1,1) NOT NULL,
+	[Refno_Code] [int] NULL,
+	[Refno_Description] [varchar](50) NULL,
+	[Refno_Prefix] [varchar](50) NULL,
+	[Refno_Year] [int] NULL,
+	[Refno_Count] [int] NULL,
+	[RefNo_Selected] [bit] NULL,
+	[Refno_Vat] [varchar](20) NULL
+) ON [PRIMARY]
+END
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		Martin Omnes (MO)
+-- Create date: 2015/09/09
+-- Description:	Fetching vehicle data into vehicledetail page 
+-- =============================================
+ 
+
+ALTER Procedure [dbo].[USP_FETCH_VEHICLE_NEW_USED]
+
+AS  
+BEGIN  
+	
+	SELECT [Refno_Code], [Refno_Description], [Refno_Prefix], [Refno_Year]+[Refno_Count] AS [Refno_Count] 
+	FROM TBL_MAS_VEHICLE_REFNO
+		ORDER BY 
+				[Refno_Code]
+	
+END 
+

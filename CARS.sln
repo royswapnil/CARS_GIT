@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CARS", "CARS\CARS.vbproj", "{379059FC-5A9E-4E5F-8856-9D0107FA0740}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CARS.CoreLibrary", "CARS.CoreLibrary", "{E1C93126-B301-444F-8EC4-FE66D2F34E1D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CARS.CoreLibrary", "CARS.CoreLibrary\CARS.CoreLibrary.vbproj", "{470D424F-6A59-46E2-8E61-F9D4367A9F59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{379059FC-5A9E-4E5F-8856-9D0107FA0740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379059FC-5A9E-4E5F-8856-9D0107FA0740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379059FC-5A9E-4E5F-8856-9D0107FA0740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379059FC-5A9E-4E5F-8856-9D0107FA0740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470D424F-6A59-46E2-8E61-F9D4367A9F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470D424F-6A59-46E2-8E61-F9D4367A9F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470D424F-6A59-46E2-8E61-F9D4367A9F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470D424F-6A59-46E2-8E61-F9D4367A9F59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{470D424F-6A59-46E2-8E61-F9D4367A9F59} = {E1C93126-B301-444F-8EC4-FE66D2F34E1D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,54 @@
+GO
+
+/****** Object:  Table [dbo].[TBL_MAS_CUSTOMER_CONTACT_PERSON]    Script Date: 12.04.2016 10:21:51 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		Thomas Won Nyheim (TWN)
+-- Create date: 2016/04/12
+-- Description:	Table for storing data regarding contact persons for company customer
+-- =============================================
+SET ANSI_PADDING ON
+GO
+IF NOT EXISTS(
+	SELECT *
+    FROM   INFORMATION_SCHEMA.TABLES
+    WHERE  TABLE_NAME = 'TBL_MAS_CUSTOMER_CONTACT_PERSON'
+           AND TABLE_SCHEMA = 'dbo'
+	)
+BEGIN
+CREATE TABLE [dbo].[TBL_MAS_CUSTOMER_CONTACT_PERSON](
+	[ID_CP] [int] IDENTITY(1,1) NOT NULL,
+	[CP_FIRST_NAME] [varchar](50) NOT NULL,
+	[CP_MIDDLE_NAME] [varchar](50) NULL,
+	[CP_LAST_NAME] [varchar](50) NULL,
+	[CP_PERM_ADD] [varchar](150) NULL,
+	[CP_VISIT_ADD] [varchar](150) NULL,
+	[CP_ZIPCODE] [varchar](50) NULL,
+	[CP_ZIP_CITY] [varchar](50) NULL,
+	[CP_EMAIL] [varchar](200) NULL,
+	[CP_PHONE_PRIVATE] [int] NULL,
+	[CP_PHONE_MOBILE] [int] NULL,
+	[CP_PHONE_FAX] [int] NULL,
+	[CP_PHONE_WORK] [int] NULL,
+	[CP_BIRTH_DATE] [date] NULL,
+	[CP_ID_TITLE] [int] NULL,
+	[CP_ID_FUNCTION] [int] NULL,
+	[CP_CONTACT] [bit] NULL,
+	[CP_CAR_USER] [bit] NULL,
+	[CP_EMAIL_REF] [bit] NULL,
+	[CP_NOTES] [text] NULL,
+	[CREATED_BY] [varchar](15) NULL,
+	[DT_CREATED] [datetime] NULL,
+	[MODIFIED_BY] [varchar](15) NULL,
+	[DT_MODIFIED] [datetime] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+END
+GO
+SET ANSI_PADDING OFF
+GO
+
+

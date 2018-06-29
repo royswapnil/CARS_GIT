@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://WS.ems.inputdata.com/" targetNamespace="http://WS.ems.inputdata.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="addOrder" type="tns:addOrder" />
+  <xs:element name="addOrderResponse" type="tns:addOrderResponse" />
+  <xs:element name="controlsByDate" type="tns:controlsByDate" />
+  <xs:element name="controlsByDateResponse" type="tns:controlsByDateResponse" />
+  <xs:element name="getPDF" type="tns:getPDF" />
+  <xs:element name="getPDFResponse" type="tns:getPDFResponse" />
+  <xs:element name="getProspectData" type="tns:getProspectData" />
+  <xs:element name="getProspectDataResponse" type="tns:getProspectDataResponse" />
+  <xs:element name="getTakstData" type="tns:getTakstData" />
+  <xs:element name="getTakstDataResponse" type="tns:getTakstDataResponse" />
+  <xs:element name="getTstandData" type="tns:getTstandData" />
+  <xs:element name="getTstandDataResponse" type="tns:getTstandDataResponse" />
+  <xs:element name="insertExtraVehicleInfo" type="tns:insertExtraVehicleInfo" />
+  <xs:element name="insertExtraVehicleInfoResponse" type="tns:insertExtraVehicleInfoResponse" />
+  <xs:element name="insertExtraVehicleOptions" type="tns:insertExtraVehicleOptions" />
+  <xs:element name="insertExtraVehicleOptionsResponse" type="tns:insertExtraVehicleOptionsResponse" />
+  <xs:element name="orderDelete" type="tns:orderDelete" />
+  <xs:element name="orderDeleteResponse" type="tns:orderDeleteResponse" />
+  <xs:element name="orderStatus" type="tns:orderStatus" />
+  <xs:element name="orderStatusResponse" type="tns:orderStatusResponse" />
+  <xs:element name="vehicleSearch" type="tns:vehicleSearch" />
+  <xs:element name="vehicleSearchResponse" type="tns:vehicleSearchResponse" />
+  <xs:element name="vkData" type="tns:vkData" />
+  <xs:element name="vkDataResponse" type="tns:vkDataResponse" />
+  <xs:element name="vkDataVask" type="tns:vkDataVask" />
+  <xs:element name="vkDataVaskResponse" type="tns:vkDataVaskResponse" />
+  <xs:complexType name="getTstandData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTstandDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:tstandDataWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tstandDataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="merknadsListe" nillable="true" type="tns:merknadDataWS" />
+      <xs:element name="status" type="xs:int" />
+      <xs:element minOccurs="0" name="tstandFeltWS" type="tns:tstandFeltDataWS" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="utstyrsListe" nillable="true" type="tns:utstyrDataWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="merknadDataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bedomning" type="xs:string" />
+      <xs:element minOccurs="0" name="eierID" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="kontrID" type="xs:string" />
+      <xs:element minOccurs="0" name="mrkID" type="xs:string" />
+      <xs:element minOccurs="0" name="mrkTxt" type="xs:string" />
+      <xs:element minOccurs="0" name="mrkTxtSep" type="xs:string" />
+      <xs:element minOccurs="0" name="pktID" type="xs:string" />
+      <xs:element minOccurs="0" name="pris" type="xs:string" />
+      <xs:element minOccurs="0" name="rekke" type="xs:int" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tstandFeltDataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adrBruker" type="xs:string" />
+      <xs:element minOccurs="0" name="adrJur" type="xs:string" />
+      <xs:element minOccurs="0" name="adresse" type="xs:string" />
+      <xs:element minOccurs="0" name="airbagUtkVK" type="xs:string" />
+      <xs:element minOccurs="0" name="annet" type="xs:string" />
+      <xs:element minOccurs="0" name="antAkslerDrift" type="xs:string" />
+      <xs:element minOccurs="0" name="antDorer" type="xs:string" />
+      <xs:element minOccurs="0" name="antSeter" type="xs:string" />
+      <xs:element minOccurs="0" name="antirustGar" type="xs:string" />
+      <xs:element minOccurs="0" name="antirustGarProd" type="xs:string" />
+      <xs:element minOccurs="0" name="arsavgiftBetalt" type="xs:string" />
+      <xs:element minOccurs="0" name="avsenderMailAdr" type="xs:string" />
+      <xs:element minOccurs="0" name="brukerID" type="xs:string" />
+      <xs:element minOccurs="0" name="brukerNavn" type="xs:string" />
+      <xs:element minOccurs="0" name="bruktImp" type="xs:string" />
+      <xs:element minOccurs="0" name="bruktimport" type="xs:string" />
+      <xs:element minOccurs="0" name="CO2" type="xs:string" />
+      <xs:element minOccurs="0" name="cabriolet" type="xs:string" />
+      <xs:element minOccurs="0" name="chassis" type="xs:int" />
+      <xs:element minOccurs="0" name="chipTunet" type="xs:string" />
+      <xs:element minOccurs="0" name="dekkSommerStand" type="xs:string" />
+      <xs:element minOccurs="0" name="dekkVinterStand" type="xs:string" />
+      <xs:element minOccurs="0" name="doerer" type="xs:string" />
+      <xs:element minOccurs="0" name="drift" type="xs:string" />
+      <xs:element minOccurs="0" name="drivstoff" type="xs:string" />
+      <xs:element minOccurs="0" name="eierEpostAdr" type="xs:string" />
+      <xs:element minOccurs="0" name="eierID" type="xs:int" />
+      <xs:element minOccurs="0" name="extraPkt1" type="xs:string" />
+      <xs:element minOccurs="0" name="extraPkt2" type="xs:string" />
+      <xs:element minOccurs="0" name="extraPkt3" type="xs:string" />
+      <xs:element minOccurs="0" name="extraPkt4" type="xs:string" />
+      <xs:element minOccurs="0" name="extraPkt5" type="xs:string" />
+      <xs:element minOccurs="0" name="fakturert" type="xs:string" />
+      <xs:element minOccurs="0" name="farge" type="xs:string" />
+      <xs:element minOccurs="0" name="fargeFarge" type="xs:string" />
+      <xs:element minOccurs="0" name="fax" type="xs:string" />
+      <xs:element minOccurs="0" name="faxBruker" type="xs:string" />
+      <xs:element minOccurs="0" name="faxJur" type="xs:string" />
+      <xs:element minOccurs="0" name="firmaFax" type="xs:string" />
+      <xs:element minOccurs="0" name="firmaNavn" type="xs:string" />
+      <xs:element minOccurs="0" name="firmaTlf" type="xs:string" />
+      <xs:element minOccurs="0" name="garDato" type="xs:string" />
+      <xs:element minOccurs="0" name="garKm" type="xs:string" />
+      <xs:element minOccurs="0" name="gir" type="xs:string" />
+      <xs:element minOccurs="0" name="gruppeID" type="xs:int" />
+      <xs:element minOccurs="0" name="heftelser" type="xs:string" />
+      <xs:element minOccurs="0" name="helhetsInntr" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:string" />
+      <xs:element minOccurs="0" name="importertAv" type="xs:string" />
+      <xs:element minOccurs="0" name="instBok" type="xs:string" />
+      <xs:element minOccurs="0" name="instruksjonsbok" type="xs:string" />
+      <xs:element minOccurs="0" name="intFarge" type="xs:string" />
+      <xs:element minOccurs="0" name="ipadress" type="xs:string" />
+      <xs:element minOccurs="0" name="jurEier" type="xs:string" />
+      <xs:element minOccurs="0" name="jurKundenr" type="xs:string" />
+      <xs:element minOccurs="0" name="kjGr" type="xs:string" />
+      <xs:element minOccurs="0" name="kjmerke" type="xs:string" />
+      <xs:element minOccurs="0" name="klient" type="xs:string" />
+      <xs:element minOccurs="0" name="kmStand" type="xs:string" />
+      <xs:element minOccurs="0" name="kmStandBekreftet" type="xs:string" />
+      <xs:element minOccurs="0" name="kollSkadet" type="xs:string" />
+      <xs:element minOccurs="0" name="kollisjonSkadet" type="xs:string" />
+      <xs:element minOccurs="0" name="kombi3d" type="xs:string" />
+      <xs:element minOccurs="0" name="kombi5d" type="xs:string" />
+      <xs:element minOccurs="0" name="kontrDato" type="xs:string" />
+      <xs:element minOccurs="0" name="kontraktsnr" type="xs:string" />
+      <xs:element minOccurs="0" name="korrKm" type="xs:string" />
+      <xs:element minOccurs="0" name="kundMot" type="xs:string" />
+      <xs:element minOccurs="0" name="kundeNavn" type="xs:string" />
+      <xs:element minOccurs="0" name="kundenr" type="xs:string" />
+      <xs:element minOccurs="0" name="merke" type="xs:string" />
+      <xs:element minOccurs="0" name="minibuss" type="xs:string" />
+      <xs:element minOccurs="0" name="mobil" type="xs:string" />
+      <xs:element minOccurs="0" name="modell" type="xs:string" />
+      <xs:element minOccurs="0" name="motorVol" type="xs:string" />
+      <xs:element minOccurs="0" name="motorytelse" type="xs:string" />
+      <xs:element minOccurs="0" name="mottatt" type="xs:string" />
+      <xs:element minOccurs="0" name="nytteLast" type="xs:string" />
+      <xs:element minOccurs="0" name="ordrenummer" type="xs:string" />
+      <xs:element minOccurs="0" name="orgNokler" type="xs:string" />
+      <xs:element minOccurs="0" name="orgVognkort" type="xs:string" />
+      <xs:element minOccurs="0" name="p01" type="xs:string" />
+      <xs:element minOccurs="0" name="p02" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x1" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x10" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x11" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x2" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x3" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x4" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x5" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x6" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x7" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x8" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x9" type="xs:string" />
+      <xs:element minOccurs="0" name="p111" type="xs:string" />
+      <xs:element minOccurs="0" name="p1110" type="xs:string" />
+      <xs:element minOccurs="0" name="p1111" type="xs:string" />
+      <xs:element minOccurs="0" name="p1112" type="xs:string" />
+      <xs:element minOccurs="0" name="p1113" type="xs:string" />
+      <xs:element minOccurs="0" name="p1114" type="xs:string" />
+      <xs:element minOccurs="0" name="p1115" type="xs:string" />
+      <xs:element minOccurs="0" name="p1116" type="xs:string" />
+      <xs:element minOccurs="0" name="p1117" type="xs:string" />
+      <xs:element minOccurs="0" name="p1118" type="xs:string" />
+      <xs:element minOccurs="0" name="p1119" type="xs:string" />
+      <xs:element minOccurs="0" name="p112" type="xs:string" />
+      <xs:element minOccurs="0" name="p1120" type="xs:string" />
+      <xs:element minOccurs="0" name="p1121" type="xs:string" />
+      <xs:element minOccurs="0" name="p1122" type="xs:string" />
+      <xs:element minOccurs="0" name="p1123" type="xs:string" />
+      <xs:element minOccurs="0" name="p113" type="xs:string" />
+      <xs:element minOccurs="0" name="p114" type="xs:string" />
+      <xs:element minOccurs="0" name="p115" type="xs:string" />
+      <xs:element minOccurs="0" name="p116" type="xs:string" />
+      <xs:element minOccurs="0" name="p117" type="xs:string" />
+      <xs:element minOccurs="0" name="p118" type="xs:string" />
+      <xs:element minOccurs="0" name="p119" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x1" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x2" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x3" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x4" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x5" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x6" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x7" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x8" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x9" type="xs:string" />
+      <xs:element minOccurs="0" name="p121" type="xs:string" />
+      <xs:element minOccurs="0" name="p122" type="xs:string" />
+      <xs:element minOccurs="0" name="p123" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x1" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x10" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x11" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x12" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x13" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x14" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x15" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x2" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x3" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x4" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x5" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x6" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x7" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x8" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x9" type="xs:string" />
+      <xs:element minOccurs="0" name="p21" type="xs:string" />
+      <xs:element minOccurs="0" name="p22" type="xs:string" />
+      <xs:element minOccurs="0" name="p23" type="xs:string" />
+      <xs:element minOccurs="0" name="p24" type="xs:string" />
+      <xs:element minOccurs="0" name="p31" type="xs:string" />
+      <xs:element minOccurs="0" name="p32" type="xs:string" />
+      <xs:element minOccurs="0" name="p33" type="xs:string" />
+      <xs:element minOccurs="0" name="p41" type="xs:string" />
+      <xs:element minOccurs="0" name="p410" type="xs:string" />
+      <xs:element minOccurs="0" name="p411" type="xs:string" />
+      <xs:element minOccurs="0" name="p412" type="xs:string" />
+      <xs:element minOccurs="0" name="p413" type="xs:string" />
+      <xs:element minOccurs="0" name="p414" type="xs:string" />
+      <xs:element minOccurs="0" name="p42" type="xs:string" />
+      <xs:element minOccurs="0" name="p43" type="xs:string" />
+      <xs:element minOccurs="0" name="p44" type="xs:string" />
+      <xs:element minOccurs="0" name="p45" type="xs:string" />
+      <xs:element minOccurs="0" name="p46" type="xs:string" />
+      <xs:element minOccurs="0" name="p47" type="xs:string" />
+      <xs:element minOccurs="0" name="p48" type="xs:string" />
+      <xs:element minOccurs="0" name="p49" type="xs:string" />
+      <xs:element minOccurs="0" name="p51" type="xs:string" />
+      <xs:element minOccurs="0" name="p52" type="xs:string" />
+      <xs:element minOccurs="0" name="p53" type="xs:string" />
+      <xs:element minOccurs="0" name="p54" type="xs:string" />
+      <xs:element minOccurs="0" name="p55" type="xs:string" />
+      <xs:element minOccurs="0" name="p56" type="xs:string" />
+      <xs:element minOccurs="0" name="p57" type="xs:string" />
+      <xs:element minOccurs="0" name="p58" type="xs:string" />
+      <xs:element minOccurs="0" name="p59" type="xs:string" />
+      <xs:element minOccurs="0" name="p61" type="xs:string" />
+      <xs:element minOccurs="0" name="p610" type="xs:string" />
+      <xs:element minOccurs="0" name="p611" type="xs:string" />
+      <xs:element minOccurs="0" name="p612" type="xs:string" />
+      <xs:element minOccurs="0" name="p613" type="xs:string" />
+      <xs:element minOccurs="0" name="p62" type="xs:string" />
+      <xs:element minOccurs="0" name="p63" type="xs:string" />
+      <xs:element minOccurs="0" name="p64" type="xs:string" />
+      <xs:element minOccurs="0" name="p65" type="xs:string" />
+      <xs:element minOccurs="0" name="p66" type="xs:string" />
+      <xs:element minOccurs="0" name="p67" type="xs:string" />
+      <xs:element minOccurs="0" name="p68" type="xs:string" />
+      <xs:element minOccurs="0" name="p69" type="xs:string" />
+      <xs:element minOccurs="0" name="p71" type="xs:string" />
+      <xs:element minOccurs="0" name="p72" type="xs:string" />
+      <xs:element minOccurs="0" name="p73" type="xs:string" />
+      <xs:element minOccurs="0" name="p74" type="xs:string" />
+      <xs:element minOccurs="0" name="p75" type="xs:string" />
+      <xs:element minOccurs="0" name="p76" type="xs:string" />
+      <xs:element minOccurs="0" name="p77" type="xs:string" />
+      <xs:element minOccurs="0" name="p78" type="xs:string" />
+      <xs:element minOccurs="0" name="p79" type="xs:string" />
+      <xs:element minOccurs="0" name="p81" type="xs:string" />
+      <xs:element minOccurs="0" name="p82" type="xs:string" />
+      <xs:element minOccurs="0" name="p83" type="xs:string" />
+      <xs:element minOccurs="0" name="p84" type="xs:string" />
+      <xs:element minOccurs="0" name="p9" type="xs:string" />
+      <xs:element minOccurs="0" name="piggDekk" type="xs:string" />
+      <xs:element minOccurs="0" name="postNr" type="xs:string" />
+      <xs:element minOccurs="0" name="postnrBruker" type="xs:string" />
+      <xs:element minOccurs="0" name="postnrJur" type="xs:string" />
+      <xs:element minOccurs="0" name="poststedBruker" type="xs:string" />
+      <xs:element minOccurs="0" name="poststedJur" type="xs:string" />
+      <xs:element minOccurs="0" name="regAar" type="xs:string" />
+      <xs:element minOccurs="0" name="regDato" type="xs:string" />
+      <xs:element minOccurs="0" name="registreringsAar" type="xs:string" />
+      <xs:element minOccurs="0" name="sdekkHB" type="xs:string" />
+      <xs:element minOccurs="0" name="sdekkHF" type="xs:string" />
+      <xs:element minOccurs="0" name="sdekkVB" type="xs:string" />
+      <xs:element minOccurs="0" name="sdekkVF" type="xs:string" />
+      <xs:element minOccurs="0" name="sedan" type="xs:string" />
+      <xs:element minOccurs="0" name="servTekn" type="xs:string" />
+      <xs:element minOccurs="0" name="servicehefte" type="xs:string" />
+      <xs:element minOccurs="0" name="sistGodkj" type="xs:string" />
+      <xs:element minOccurs="0" name="sistGodkjKmstand" type="xs:string" />
+      <xs:element minOccurs="0" name="sistReg" type="xs:string" />
+      <xs:element minOccurs="0" name="sisteService" type="xs:string" />
+      <xs:element minOccurs="0" name="sisteServiceDato" type="xs:string" />
+      <xs:element minOccurs="0" name="sisteServiceKmstand" type="xs:string" />
+      <xs:element minOccurs="0" name="skiftetRegRemDato" type="xs:string" />
+      <xs:element minOccurs="0" name="skiftetRegRemKmstand" type="xs:string" />
+      <xs:element minOccurs="0" name="slettet" type="xs:string" />
+      <xs:element minOccurs="0" name="stasjVogn" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+      <xs:element minOccurs="0" name="sted" type="xs:string" />
+      <xs:element minOccurs="0" name="stoy" type="xs:string" />
+      <xs:element minOccurs="0" name="sumPaakost" type="xs:string" />
+      <xs:element minOccurs="0" name="takstmann" type="xs:string" />
+      <xs:element minOccurs="0" name="tidlSkade" type="xs:string" />
+      <xs:element minOccurs="0" name="tidligereBruk" type="xs:int" />
+      <xs:element minOccurs="0" name="tilhVktMbrems" type="xs:string" />
+      <xs:element minOccurs="0" name="tilhVktUbrems" type="xs:string" />
+      <xs:element minOccurs="0" name="tlfBruker" type="xs:string" />
+      <xs:element minOccurs="0" name="tlfJur" type="xs:string" />
+      <xs:element minOccurs="0" name="tlfPriv" type="xs:string" />
+      <xs:element minOccurs="0" name="ts" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="ustNr" type="xs:string" />
+      <xs:element minOccurs="0" name="varebil" type="xs:string" />
+      <xs:element minOccurs="0" name="variant" type="xs:string" />
+      <xs:element minOccurs="0" name="vdekkHB" type="xs:string" />
+      <xs:element minOccurs="0" name="vdekkHF" type="xs:string" />
+      <xs:element minOccurs="0" name="vdekkVB" type="xs:string" />
+      <xs:element minOccurs="0" name="vdekkVF" type="xs:string" />
+      <xs:element minOccurs="0" name="vekt" type="xs:string" />
+      <xs:element minOccurs="0" name="versjon" type="xs:string" />
+      <xs:element minOccurs="0" name="ytelseBenevn" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="utstyrDataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="beskrivelse" type="xs:string" />
+      <xs:element minOccurs="0" name="egenTekst" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="merknad" type="xs:string" />
+      <xs:element minOccurs="0" name="navn" type="xs:string" />
+      <xs:element minOccurs="0" name="nummer" type="xs:string" />
+      <xs:element minOccurs="0" name="parentNr" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="typeId" type="xs:string" />
+      <xs:element minOccurs="0" name="utstyrsId" type="xs:int" />
+      <xs:element minOccurs="0" name="utstyrsNr" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertExtraVehicleInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="extraVehicleData" type="tns:extraVehicleDataWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="extraVehicleDataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aux1" type="xs:string" />
+      <xs:element minOccurs="0" name="aux2" type="xs:string" />
+      <xs:element minOccurs="0" name="aux3" type="xs:string" />
+      <xs:element minOccurs="0" name="aux4" type="xs:string" />
+      <xs:element minOccurs="0" name="aux5" type="xs:string" />
+      <xs:element minOccurs="0" name="aux6" type="xs:string" />
+      <xs:element minOccurs="0" name="aux7" type="xs:string" />
+      <xs:element minOccurs="0" name="aux8" type="xs:string" />
+      <xs:element minOccurs="0" name="aux9" type="xs:string" />
+      <xs:element minOccurs="0" name="baseColour" type="xs:string" />
+      <xs:element minOccurs="0" name="bodywork" type="xs:string" />
+      <xs:element minOccurs="0" name="brand" type="xs:string" />
+      <xs:element minOccurs="0" name="colour" type="xs:string" />
+      <xs:element minOccurs="0" name="commisionCar" type="xs:string" />
+      <xs:element minOccurs="0" name="drive" type="xs:string" />
+      <xs:element minOccurs="0" name="engine" type="xs:string" />
+      <xs:element minOccurs="0" name="enginePower" type="xs:string" />
+      <xs:element name="enginePowerDenom" type="xs:int" />
+      <xs:element minOccurs="0" name="estGuarantee" type="xs:string" />
+      <xs:element minOccurs="0" name="estProfit" type="xs:string" />
+      <xs:element minOccurs="0" name="estPurchasePrice" type="xs:string" />
+      <xs:element minOccurs="0" name="estSalesPrice" type="xs:int" />
+      <xs:element minOccurs="0" name="firstRegDate" type="xs:string" />
+      <xs:element minOccurs="0" name="fuel" type="xs:string" />
+      <xs:element minOccurs="0" name="gearbox" type="xs:string" />
+      <xs:element minOccurs="0" name="guaranteeType" type="xs:string" />
+      <xs:element minOccurs="0" name="inventoryDescription" type="xs:string" />
+      <xs:element minOccurs="0" name="keyno" type="xs:string" />
+      <xs:element minOccurs="0" name="legalAddress" type="xs:string" />
+      <xs:element minOccurs="0" name="legalCell" type="xs:string" />
+      <xs:element minOccurs="0" name="legalCity" type="xs:string" />
+      <xs:element name="legalCoid" type="xs:int" />
+      <xs:element minOccurs="0" name="legalName" type="xs:string" />
+      <xs:element minOccurs="0" name="legalPhone" type="xs:string" />
+      <xs:element name="legalZip" type="xs:int" />
+      <xs:element minOccurs="0" name="localId" type="xs:string" />
+      <xs:element minOccurs="0" name="marketingDescription" type="xs:string" />
+      <xs:element minOccurs="0" name="mileage" type="xs:int" />
+      <xs:element minOccurs="0" name="model" type="xs:string" />
+      <xs:element minOccurs="0" name="modelVar" type="xs:string" />
+      <xs:element minOccurs="0" name="modelYear" type="xs:int" />
+      <xs:element minOccurs="0" name="numDoors" type="xs:int" />
+      <xs:element minOccurs="0" name="numSeats" type="xs:int" />
+      <xs:element minOccurs="0" name="ownerAddress" type="xs:string" />
+      <xs:element minOccurs="0" name="ownerCell" type="xs:string" />
+      <xs:element minOccurs="0" name="ownerCity" type="xs:string" />
+      <xs:element name="ownerCoid" type="xs:int" />
+      <xs:element minOccurs="0" name="ownerName" type="xs:string" />
+      <xs:element minOccurs="0" name="ownerPhone" type="xs:string" />
+      <xs:element name="ownerZip" type="xs:int" />
+      <xs:element minOccurs="0" name="payload" type="xs:string" />
+      <xs:element minOccurs="0" name="providerID" type="xs:string" />
+      <xs:element minOccurs="0" name="purchasePrice" type="xs:string" />
+      <xs:element minOccurs="0" name="regno" type="xs:string" />
+      <xs:element minOccurs="0" name="remarks" type="xs:string" />
+      <xs:element minOccurs="0" name="reserved1" type="xs:string" />
+      <xs:element minOccurs="0" name="reserved2" type="xs:string" />
+      <xs:element minOccurs="0" name="reserved3" type="xs:string" />
+      <xs:element minOccurs="0" name="reserved4" type="xs:string" />
+      <xs:element minOccurs="0" name="reserved5" type="xs:string" />
+      <xs:element minOccurs="0" name="reserved6" type="xs:string" />
+      <xs:element minOccurs="0" name="reserved7" type="xs:string" />
+      <xs:element minOccurs="0" name="reserved8" type="xs:string" />
+      <xs:element minOccurs="0" name="reserved9" type="xs:string" />
+      <xs:element minOccurs="0" name="salesCost" type="xs:string" />
+      <xs:element minOccurs="0" name="salesPrice" type="xs:int" />
+      <xs:element minOccurs="0" name="sellingPriceExVAT" type="xs:string" />
+      <xs:element name="status" type="xs:int" />
+      <xs:element minOccurs="0" name="stockno" type="xs:string" />
+      <xs:element minOccurs="0" name="suggestedSellingPrice" type="xs:string" />
+      <xs:element minOccurs="0" name="trimColour" type="xs:string" />
+      <xs:element minOccurs="0" name="userAddress" type="xs:string" />
+      <xs:element minOccurs="0" name="userCell" type="xs:string" />
+      <xs:element minOccurs="0" name="userCity" type="xs:string" />
+      <xs:element minOccurs="0" name="userName" type="xs:string" />
+      <xs:element minOccurs="0" name="userPhone" type="xs:string" />
+      <xs:element name="userZip" type="xs:int" />
+      <xs:element minOccurs="0" name="vehicleGroup" type="xs:string" />
+      <xs:element minOccurs="0" name="vin" type="xs:string" />
+      <xs:element minOccurs="0" name="weight" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertExtraVehicleInfoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPDF">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="params" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPDFResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:pdfResultWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pdfResultWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="data" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element name="size" type="xs:int" />
+      <xs:element name="status" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="orderDelete">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element name="orderID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="orderDeleteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:kundeOrderDeleteResultWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kundeOrderDeleteResultWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="resultText" type="xs:string" />
+      <xs:element name="status" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getProspectData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getProspectDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:prospectDataWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="prospectDataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aarsAvg" type="xs:string" />
+      <xs:element minOccurs="0" name="aarsAvgBetalt" type="xs:string" />
+      <xs:element minOccurs="0" name="adresse2" type="xs:string" />
+      <xs:element minOccurs="0" name="adresse3" type="xs:string" />
+      <xs:element minOccurs="0" name="adresse4" type="xs:string" />
+      <xs:element minOccurs="0" name="antDorer" type="xs:string" />
+      <xs:element minOccurs="0" name="antEiere" type="xs:string" />
+      <xs:element minOccurs="0" name="antSeter" type="xs:string" />
+      <xs:element minOccurs="0" name="autodbFeilmelding" type="xs:string" />
+      <xs:element minOccurs="0" name="autodbFraDato" type="xs:string" />
+      <xs:element minOccurs="0" name="autodbPartnerid" type="xs:string" />
+      <xs:element minOccurs="0" name="autodbPublisertDatoFoerste" type="xs:string" />
+      <xs:element minOccurs="0" name="autodbPublisertDatoSiste" type="xs:string" />
+      <xs:element minOccurs="0" name="autodbSlettetDato" type="xs:string" />
+      <xs:element minOccurs="0" name="autodbSolgtDato" type="xs:string" />
+      <xs:element minOccurs="0" name="autodbStatus" type="xs:string" />
+      <xs:element minOccurs="0" name="autodbTilDato" type="xs:string" />
+      <xs:element minOccurs="0" name="autodburl" type="xs:string" />
+      <xs:element minOccurs="0" name="avgiftsklasse" type="xs:string" />
+      <xs:element minOccurs="0" name="beskrivelse" type="xs:string" />
+      <xs:element minOccurs="0" name="co2" type="xs:string" />
+      <xs:element minOccurs="0" name="drivendeHjul" type="xs:string" />
+      <xs:element minOccurs="0" name="drivstoff" type="xs:string" />
+      <xs:element minOccurs="0" name="effektivRente" type="xs:string" />
+      <xs:element minOccurs="0" name="egenkapitalKroner" type="xs:string" />
+      <xs:element minOccurs="0" name="egenkapitalProsent" type="xs:string" />
+      <xs:element minOccurs="0" name="eierID" type="xs:int" />
+      <xs:element minOccurs="0" name="epost" type="xs:string" />
+      <xs:element minOccurs="0" name="etableringsgebyr" type="xs:string" />
+      <xs:element minOccurs="0" name="farge" type="xs:string" />
+      <xs:element minOccurs="0" name="fargebeskr" type="xs:string" />
+      <xs:element minOccurs="0" name="fax" type="xs:string" />
+      <xs:element minOccurs="0" name="finansPeriode" type="xs:string" />
+      <xs:element minOccurs="0" name="finnBilderRespons" type="xs:string" />
+      <xs:element minOccurs="0" name="finnBilderStatus" type="xs:string" />
+      <xs:element minOccurs="0" name="finnFeilmelding" type="xs:string" />
+      <xs:element minOccurs="0" name="finnPartnerid" type="xs:string" />
+      <xs:element minOccurs="0" name="finnPublisertDatoFoerste" type="xs:string" />
+      <xs:element minOccurs="0" name="finnPublisertDatoSiste" type="xs:string" />
+      <xs:element minOccurs="0" name="finnSalgsoppgaveRespons" type="xs:string" />
+      <xs:element minOccurs="0" name="finnSalgsoppgaveStatus" type="xs:string" />
+      <xs:element minOccurs="0" name="finnSlettetDato" type="xs:string" />
+      <xs:element minOccurs="0" name="finnSolgtDato" type="xs:string" />
+      <xs:element minOccurs="0" name="finnStatus" type="xs:string" />
+      <xs:element minOccurs="0" name="finnurl" type="xs:string" />
+      <xs:element minOccurs="0" name="firmanavn" type="xs:string" />
+      <xs:element minOccurs="0" name="fraDato" type="xs:string" />
+      <xs:element minOccurs="0" name="garanti" type="xs:string" />
+      <xs:element minOccurs="0" name="garantiKM" type="xs:string" />
+      <xs:element minOccurs="0" name="garantiPeriode" type="xs:string" />
+      <xs:element minOccurs="0" name="gateAdresse" type="xs:string" />
+      <xs:element minOccurs="0" name="gir" type="xs:string" />
+      <xs:element minOccurs="0" name="gruppeID" type="xs:int" />
+      <xs:element minOccurs="0" name="gruppenavn" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:string" />
+      <xs:element minOccurs="0" name="importert" type="xs:string" />
+      <xs:element minOccurs="0" name="intFarge" type="xs:string" />
+      <xs:element minOccurs="0" name="intNr" type="xs:string" />
+      <xs:element minOccurs="0" name="karosseri" type="xs:string" />
+      <xs:element minOccurs="0" name="kjennemerke" type="xs:string" />
+      <xs:element minOccurs="0" name="kjoper" type="xs:string" />
+      <xs:element minOccurs="0" name="kmStand" type="xs:string" />
+      <xs:element minOccurs="0" name="laanebehov" type="xs:string" />
+      <xs:element minOccurs="0" name="laanegiver" type="xs:string" />
+      <xs:element minOccurs="0" name="landKode" type="xs:string" />
+      <xs:element minOccurs="0" name="lastoppTstand" type="xs:string" />
+      <xs:element minOccurs="0" name="merkeNavn" type="xs:string" />
+      <xs:element minOccurs="0" name="mobilnr" type="xs:string" />
+      <xs:element minOccurs="0" name="modell" type="xs:string" />
+      <xs:element minOccurs="0" name="motorytelse" type="xs:string" />
+      <xs:element minOccurs="0" name="navn" type="xs:string" />
+      <xs:element minOccurs="0" name="nominellRente" type="xs:string" />
+      <xs:element minOccurs="0" name="omraade" type="xs:string" />
+      <xs:element minOccurs="0" name="omregAvgBetalt" type="xs:string" />
+      <xs:element minOccurs="0" name="omregAvgift" type="xs:string" />
+      <xs:element minOccurs="0" name="overskrift" type="xs:string" />
+      <xs:element minOccurs="0" name="plassering" type="xs:string" />
+      <xs:element minOccurs="0" name="postNr" type="xs:string" />
+      <xs:element minOccurs="0" name="pris" type="xs:string" />
+      <xs:element minOccurs="0" name="refNr" type="xs:string" />
+      <xs:element minOccurs="0" name="regAAr" type="xs:string" />
+      <xs:element minOccurs="0" name="regFoerste" type="xs:string" />
+      <xs:element minOccurs="0" name="salgsform" type="xs:string" />
+      <xs:element minOccurs="0" name="selgersEpost" type="xs:string" />
+      <xs:element minOccurs="0" name="selgersNavn" type="xs:string" />
+      <xs:element minOccurs="0" name="selgersTelefon" type="xs:string" />
+      <xs:element minOccurs="0" name="sendKjennemerke" type="xs:string" />
+      <xs:element minOccurs="0" name="serviceHistorikk" type="xs:string" />
+      <xs:element minOccurs="0" name="slagvolum" type="xs:string" />
+      <xs:element minOccurs="0" name="slettet" type="xs:string" />
+      <xs:element minOccurs="0" name="solgtDato" type="xs:string" />
+      <xs:element minOccurs="0" name="solgtPris" type="xs:string" />
+      <xs:element name="status" type="xs:int" />
+      <xs:element minOccurs="0" name="telefonnr" type="xs:string" />
+      <xs:element minOccurs="0" name="terminbelop" type="xs:string" />
+      <xs:element minOccurs="0" name="termingebyr" type="xs:string" />
+      <xs:element minOccurs="0" name="tilDato" type="xs:string" />
+      <xs:element minOccurs="0" name="ts" type="xs:string" />
+      <xs:element minOccurs="0" name="tstandID" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="utstyr" type="xs:string" />
+      <xs:element minOccurs="0" name="variant" type="xs:string" />
+      <xs:element minOccurs="0" name="vekt" type="xs:string" />
+      <xs:element minOccurs="0" name="viseSolgtInfo" type="xs:string" />
+      <xs:element minOccurs="0" name="viseSolgtPris" type="xs:string" />
+      <xs:element minOccurs="0" name="web" type="xs:string" />
+      <xs:element minOccurs="0" name="zettReferanse" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertExtraVehicleOptions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="regno" type="xs:string" />
+      <xs:element minOccurs="0" name="providerName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="options" nillable="true" type="tns:extraVehicleOptionWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="extraVehicleOptionWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element minOccurs="0" name="optionValue" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertExtraVehicleOptionsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vkData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="country" type="xs:int" />
+      <xs:element minOccurs="0" name="type" type="xs:int" />
+      <xs:element minOccurs="0" name="regnr" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vkDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:bildataWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bildataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="akseltrykkBak" type="xs:string" />
+      <xs:element minOccurs="0" name="akseltrykkForan" type="xs:string" />
+      <xs:element minOccurs="0" name="antAksler" type="xs:string" />
+      <xs:element minOccurs="0" name="antAkslerDrift" type="xs:string" />
+      <xs:element minOccurs="0" name="avregDato" type="xs:string" />
+      <xs:element minOccurs="0" name="bredde" type="xs:string" />
+      <xs:element minOccurs="0" name="bruktimport" type="xs:string" />
+      <xs:element minOccurs="0" name="co2Utslipp" type="xs:string" />
+      <xs:element minOccurs="0" name="drivendeHjul" type="xs:string" />
+      <xs:element minOccurs="0" name="drivstoff" type="xs:string" />
+      <xs:element minOccurs="0" name="EUvariant" type="xs:string" />
+      <xs:element minOccurs="0" name="EUversjon" type="xs:string" />
+      <xs:element minOccurs="0" name="egenvekt" type="xs:string" />
+      <xs:element minOccurs="0" name="euHovednummer" type="xs:string" />
+      <xs:element minOccurs="0" name="euronorm" type="xs:string" />
+      <xs:element minOccurs="0" name="fabPartFilter" type="xs:string" />
+      <xs:element minOccurs="0" name="farge" type="xs:string" />
+      <xs:element minOccurs="0" name="fjernet" type="xs:string" />
+      <xs:element minOccurs="0" name="girkasse" type="xs:string" />
+      <xs:element minOccurs="0" name="gyldigFraUnr" type="xs:string" />
+      <xs:element minOccurs="0" name="identitetAnm" type="xs:string" />
+      <xs:element minOccurs="0" name="kjennemerke" type="xs:string" />
+      <xs:element minOccurs="0" name="kjoretoygruppe" type="xs:string" />
+      <xs:element minOccurs="0" name="lengde" type="xs:string" />
+      <xs:element minOccurs="0" name="lngdTilhKobl" type="xs:string" />
+      <xs:element minOccurs="0" name="maksSporvBak" type="xs:string" />
+      <xs:element minOccurs="0" name="maksSporvForan" type="xs:string" />
+      <xs:element minOccurs="0" name="maxBelTilhFeste" type="xs:string" />
+      <xs:element minOccurs="0" name="maxTaklast" type="xs:string" />
+      <xs:element minOccurs="0" name="merkeNavn" type="xs:string" />
+      <xs:element minOccurs="0" name="merkekode" type="xs:string" />
+      <xs:element minOccurs="0" name="minHastBak" type="xs:string" />
+      <xs:element minOccurs="0" name="minHastForan" type="xs:string" />
+      <xs:element minOccurs="0" name="minInnpressBak" type="xs:string" />
+      <xs:element minOccurs="0" name="minInnpressForan" type="xs:string" />
+      <xs:element minOccurs="0" name="minLIbak" type="xs:string" />
+      <xs:element minOccurs="0" name="minLIforan" type="xs:string" />
+      <xs:element minOccurs="0" name="modellbetegnelse" type="xs:string" />
+      <xs:element minOccurs="0" name="motormerking" type="xs:string" />
+      <xs:element minOccurs="0" name="motorytelse" type="xs:string" />
+      <xs:element minOccurs="0" name="nestePKK" type="xs:string" />
+      <xs:element minOccurs="0" name="omdreininger" type="xs:string" />
+      <xs:element minOccurs="0" name="rammeKarosseri" type="xs:string" />
+      <xs:element minOccurs="0" name="regAAr" type="xs:string" />
+      <xs:element minOccurs="0" name="regFgang" type="xs:string" />
+      <xs:element minOccurs="0" name="regFoerstegNorge" type="xs:string" />
+      <xs:element minOccurs="0" name="sistPKKgodkj" type="xs:string" />
+      <xs:element minOccurs="0" name="sisteRegDato" type="xs:string" />
+      <xs:element minOccurs="0" name="sitteplasser" type="xs:string" />
+      <xs:element minOccurs="0" name="slagvolum" type="xs:string" />
+      <xs:element minOccurs="0" name="standStoy" type="xs:string" />
+      <xs:element name="status" type="xs:int" />
+      <xs:element minOccurs="0" name="stdDekkBak" type="xs:string" />
+      <xs:element minOccurs="0" name="stdDekkForan" type="xs:string" />
+      <xs:element minOccurs="0" name="stdFelgBak" type="xs:string" />
+      <xs:element minOccurs="0" name="stdFelgForan" type="xs:string" />
+      <xs:element minOccurs="0" name="tilhVktMbrems" type="xs:string" />
+      <xs:element minOccurs="0" name="tilhVktUbrems" type="xs:string" />
+      <xs:element minOccurs="0" name="totalvekt" type="xs:string" />
+      <xs:element minOccurs="0" name="typebetegnelse" type="xs:string" />
+      <xs:element minOccurs="0" name="typegodkjenningsnr" type="xs:string" />
+      <xs:element minOccurs="0" name="understellsnummer" type="xs:string" />
+      <xs:element minOccurs="0" name="vognkortAnm" type="xs:string" />
+      <xs:element minOccurs="0" name="vogntogvekt" type="xs:string" />
+      <xs:element minOccurs="0" name="ytelseBenevn" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="controlsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="from" type="xs:string" />
+      <xs:element minOccurs="0" name="to" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="controlsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:kontrollDataWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kontrollDataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bremsesyst" type="xs:string" />
+      <xs:element minOccurs="0" name="distrikt" type="xs:string" />
+      <xs:element minOccurs="0" name="drivstoff" type="xs:string" />
+      <xs:element minOccurs="0" name="eierAdr" type="xs:string" />
+      <xs:element minOccurs="0" name="eierEnavn" type="xs:string" />
+      <xs:element minOccurs="0" name="eierEpostAdr" type="xs:string" />
+      <xs:element minOccurs="0" name="eierFnavn" type="xs:string" />
+      <xs:element name="eierID" type="xs:int" />
+      <xs:element minOccurs="0" name="eierMobil" type="xs:string" />
+      <xs:element minOccurs="0" name="eierORG" type="xs:string" />
+      <xs:element minOccurs="0" name="eierPostNr" type="xs:string" />
+      <xs:element minOccurs="0" name="eierPostSted" type="xs:string" />
+      <xs:element minOccurs="0" name="eierTelefon" type="xs:string" />
+      <xs:element minOccurs="0" name="fabLab" type="xs:string" />
+      <xs:element minOccurs="0" name="fritekstMail" type="xs:string" />
+      <xs:element minOccurs="0" name="gruppeID" type="xs:int" />
+      <xs:element minOccurs="0" name="init" type="xs:string" />
+      <xs:element minOccurs="0" name="ipAddress" type="xs:string" />
+      <xs:element minOccurs="0" name="kjGr" type="xs:string" />
+      <xs:element minOccurs="0" name="kjMerke" type="xs:string" />
+      <xs:element minOccurs="0" name="kjoreforbud" type="xs:string" />
+      <xs:element minOccurs="0" name="klient" type="xs:string" />
+      <xs:element minOccurs="0" name="kmStand" type="xs:string" />
+      <xs:element minOccurs="0" name="kontrAr" type="xs:string" />
+      <xs:element minOccurs="0" name="kontrKode" type="xs:string" />
+      <xs:element minOccurs="0" name="kontrOrgNr" type="xs:string" />
+      <xs:element minOccurs="0" name="kontrType" type="xs:string" />
+      <xs:element minOccurs="0" name="kontrolldato" type="xs:string" />
+      <xs:element minOccurs="0" name="kvitNr" type="xs:string" />
+      <xs:element minOccurs="0" name="meldingTilEier" type="xs:string" />
+      <xs:element minOccurs="0" name="merke" type="xs:string" />
+      <xs:element minOccurs="0" name="merkeNavn" type="xs:string" />
+      <xs:element minOccurs="0" name="modell" type="xs:string" />
+      <xs:element minOccurs="0" name="mottatt" type="xs:string" />
+      <xs:element minOccurs="0" name="omin" type="xs:string" />
+      <xs:element minOccurs="0" name="p01" type="xs:string" />
+      <xs:element minOccurs="0" name="p02" type="xs:string" />
+      <xs:element minOccurs="0" name="p111" type="xs:string" />
+      <xs:element minOccurs="0" name="p1110" type="xs:string" />
+      <xs:element minOccurs="0" name="p1111" type="xs:string" />
+      <xs:element minOccurs="0" name="p1112" type="xs:string" />
+      <xs:element minOccurs="0" name="p1113" type="xs:string" />
+      <xs:element minOccurs="0" name="p1114" type="xs:string" />
+      <xs:element minOccurs="0" name="p1115" type="xs:string" />
+      <xs:element minOccurs="0" name="p1116" type="xs:string" />
+      <xs:element minOccurs="0" name="p1117" type="xs:string" />
+      <xs:element minOccurs="0" name="p1118" type="xs:string" />
+      <xs:element minOccurs="0" name="p1119" type="xs:string" />
+      <xs:element minOccurs="0" name="p112" type="xs:string" />
+      <xs:element minOccurs="0" name="p1120" type="xs:string" />
+      <xs:element minOccurs="0" name="p1121" type="xs:string" />
+      <xs:element minOccurs="0" name="p1122" type="xs:string" />
+      <xs:element minOccurs="0" name="p1123" type="xs:string" />
+      <xs:element minOccurs="0" name="p113" type="xs:string" />
+      <xs:element minOccurs="0" name="p114" type="xs:string" />
+      <xs:element minOccurs="0" name="p115" type="xs:string" />
+      <xs:element minOccurs="0" name="p116" type="xs:string" />
+      <xs:element minOccurs="0" name="p117" type="xs:string" />
+      <xs:element minOccurs="0" name="p118" type="xs:string" />
+      <xs:element minOccurs="0" name="p119" type="xs:string" />
+      <xs:element minOccurs="0" name="p121" type="xs:string" />
+      <xs:element minOccurs="0" name="p1211" type="xs:string" />
+      <xs:element minOccurs="0" name="p122" type="xs:string" />
+      <xs:element minOccurs="0" name="p123" type="xs:string" />
+      <xs:element minOccurs="0" name="p21" type="xs:string" />
+      <xs:element minOccurs="0" name="p22" type="xs:string" />
+      <xs:element minOccurs="0" name="p23" type="xs:string" />
+      <xs:element minOccurs="0" name="p24" type="xs:string" />
+      <xs:element minOccurs="0" name="p31" type="xs:string" />
+      <xs:element minOccurs="0" name="p32" type="xs:string" />
+      <xs:element minOccurs="0" name="p33" type="xs:string" />
+      <xs:element minOccurs="0" name="p41" type="xs:string" />
+      <xs:element minOccurs="0" name="p410" type="xs:string" />
+      <xs:element minOccurs="0" name="p411" type="xs:string" />
+      <xs:element minOccurs="0" name="p412" type="xs:string" />
+      <xs:element minOccurs="0" name="p413" type="xs:string" />
+      <xs:element minOccurs="0" name="p414" type="xs:string" />
+      <xs:element minOccurs="0" name="p42" type="xs:string" />
+      <xs:element minOccurs="0" name="p43" type="xs:string" />
+      <xs:element minOccurs="0" name="p44" type="xs:string" />
+      <xs:element minOccurs="0" name="p45" type="xs:string" />
+      <xs:element minOccurs="0" name="p46" type="xs:string" />
+      <xs:element minOccurs="0" name="p47" type="xs:string" />
+      <xs:element minOccurs="0" name="p48" type="xs:string" />
+      <xs:element minOccurs="0" name="p49" type="xs:string" />
+      <xs:element minOccurs="0" name="p51" type="xs:string" />
+      <xs:element minOccurs="0" name="p52" type="xs:string" />
+      <xs:element minOccurs="0" name="p53" type="xs:string" />
+      <xs:element minOccurs="0" name="p54" type="xs:string" />
+      <xs:element minOccurs="0" name="p55" type="xs:string" />
+      <xs:element minOccurs="0" name="p56" type="xs:string" />
+      <xs:element minOccurs="0" name="p57" type="xs:string" />
+      <xs:element minOccurs="0" name="p58" type="xs:string" />
+      <xs:element minOccurs="0" name="p59" type="xs:string" />
+      <xs:element minOccurs="0" name="p61" type="xs:string" />
+      <xs:element minOccurs="0" name="p610" type="xs:string" />
+      <xs:element minOccurs="0" name="p611" type="xs:string" />
+      <xs:element minOccurs="0" name="p612" type="xs:string" />
+      <xs:element minOccurs="0" name="p613" type="xs:string" />
+      <xs:element minOccurs="0" name="p62" type="xs:string" />
+      <xs:element minOccurs="0" name="p63" type="xs:string" />
+      <xs:element minOccurs="0" name="p64" type="xs:string" />
+      <xs:element minOccurs="0" name="p65" type="xs:string" />
+      <xs:element minOccurs="0" name="p66" type="xs:string" />
+      <xs:element minOccurs="0" name="p67" type="xs:string" />
+      <xs:element minOccurs="0" name="p68" type="xs:string" />
+      <xs:element minOccurs="0" name="p69" type="xs:string" />
+      <xs:element minOccurs="0" name="p71" type="xs:string" />
+      <xs:element minOccurs="0" name="p72" type="xs:string" />
+      <xs:element minOccurs="0" name="p73" type="xs:string" />
+      <xs:element minOccurs="0" name="p74" type="xs:string" />
+      <xs:element minOccurs="0" name="p75" type="xs:string" />
+      <xs:element minOccurs="0" name="p76" type="xs:string" />
+      <xs:element minOccurs="0" name="p77" type="xs:string" />
+      <xs:element minOccurs="0" name="p78" type="xs:string" />
+      <xs:element minOccurs="0" name="p79" type="xs:string" />
+      <xs:element minOccurs="0" name="p81" type="xs:string" />
+      <xs:element minOccurs="0" name="p811" type="xs:string" />
+      <xs:element minOccurs="0" name="p82" type="xs:string" />
+      <xs:element minOccurs="0" name="p821" type="xs:string" />
+      <xs:element minOccurs="0" name="p822" type="xs:string" />
+      <xs:element minOccurs="0" name="p83" type="xs:string" />
+      <xs:element minOccurs="0" name="p84" type="xs:string" />
+      <xs:element minOccurs="0" name="p9" type="xs:string" />
+      <xs:element minOccurs="0" name="regAr" type="xs:string" />
+      <xs:element minOccurs="0" name="regDato" type="xs:string" />
+      <xs:element name="serieNr" type="xs:int" />
+      <xs:element minOccurs="0" name="slettet" type="xs:string" />
+      <xs:element minOccurs="0" name="standstoy" type="xs:string" />
+      <xs:element name="status" type="xs:int" />
+      <xs:element minOccurs="0" name="tidlKontrKode" type="xs:string" />
+      <xs:element minOccurs="0" name="tilhFeste" type="xs:string" />
+      <xs:element minOccurs="0" name="tillTotVekt" type="xs:string" />
+      <xs:element minOccurs="0" name="ts" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="ustNr" type="xs:string" />
+      <xs:element minOccurs="0" name="ustNrVal" type="xs:string" />
+      <xs:element minOccurs="0" name="varslesMedMail" type="xs:string" />
+      <xs:element minOccurs="0" name="varslesMedSMS" type="xs:string" />
+      <xs:element minOccurs="0" name="vurdering" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vkDataVask">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="country" type="xs:int" />
+      <xs:element minOccurs="0" name="type" type="xs:int" />
+      <xs:element minOccurs="0" name="regnr" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vkDataVaskResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:bildataWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTakstData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTakstDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:takstDataWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="takstDataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="merknadsListe" nillable="true" type="tns:merknadDataWS" />
+      <xs:element name="status" type="xs:int" />
+      <xs:element minOccurs="0" name="takstFeltWS" type="tns:takstFeltDataWS" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="utstyrsListe" nillable="true" type="tns:utstyrDataWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="takstFeltDataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adrBruker" type="xs:string" />
+      <xs:element minOccurs="0" name="adrJur" type="xs:string" />
+      <xs:element minOccurs="0" name="adresse" type="xs:string" />
+      <xs:element minOccurs="0" name="airbagUtkVK" type="xs:string" />
+      <xs:element minOccurs="0" name="annet" type="xs:string" />
+      <xs:element minOccurs="0" name="anslPakost" type="xs:string" />
+      <xs:element minOccurs="0" name="anslattPakostForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="antAksler" type="xs:string" />
+      <xs:element minOccurs="0" name="antAkslerDrift" type="xs:string" />
+      <xs:element minOccurs="0" name="antDorer" type="xs:string" />
+      <xs:element minOccurs="0" name="antSalgspris" type="xs:string" />
+      <xs:element minOccurs="0" name="antSeter" type="xs:string" />
+      <xs:element minOccurs="0" name="antattSalgsprisForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="antirustGarProd" type="xs:string" />
+      <xs:element minOccurs="0" name="arsavgiftBetalt" type="xs:string" />
+      <xs:element minOccurs="0" name="avsenderMailAdr" type="xs:string" />
+      <xs:element minOccurs="0" name="brukerID" type="xs:string" />
+      <xs:element minOccurs="0" name="brukerNavn" type="xs:string" />
+      <xs:element minOccurs="0" name="bruktImp" type="xs:string" />
+      <xs:element minOccurs="0" name="bruktbilGaranti" type="xs:string" />
+      <xs:element minOccurs="0" name="bruktbilGarantiForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="bruktimport" type="xs:string" />
+      <xs:element minOccurs="0" name="CO2" type="xs:string" />
+      <xs:element minOccurs="0" name="cabriolet" type="xs:string" />
+      <xs:element minOccurs="0" name="chassis" type="xs:int" />
+      <xs:element minOccurs="0" name="chipTunet" type="xs:string" />
+      <xs:element minOccurs="0" name="dekkSommerStand" type="xs:string" />
+      <xs:element minOccurs="0" name="dekkVinterStand" type="xs:string" />
+      <xs:element minOccurs="0" name="doerer" type="xs:string" />
+      <xs:element minOccurs="0" name="dokKM" type="xs:string" />
+      <xs:element minOccurs="0" name="drift" type="xs:string" />
+      <xs:element minOccurs="0" name="drivstoff" type="xs:string" />
+      <xs:element minOccurs="0" name="eierEpostAdr" type="xs:string" />
+      <xs:element minOccurs="0" name="eierID" type="xs:int" />
+      <xs:element minOccurs="0" name="extraPkt1" type="xs:string" />
+      <xs:element minOccurs="0" name="extraPkt2" type="xs:string" />
+      <xs:element minOccurs="0" name="extraPkt3" type="xs:string" />
+      <xs:element minOccurs="0" name="extraPkt4" type="xs:string" />
+      <xs:element minOccurs="0" name="extraPkt5" type="xs:string" />
+      <xs:element minOccurs="0" name="fakturert" type="xs:string" />
+      <xs:element minOccurs="0" name="farge" type="xs:string" />
+      <xs:element minOccurs="0" name="fargeFarge" type="xs:string" />
+      <xs:element minOccurs="0" name="fax" type="xs:string" />
+      <xs:element minOccurs="0" name="faxBruker" type="xs:string" />
+      <xs:element minOccurs="0" name="faxJur" type="xs:string" />
+      <xs:element minOccurs="0" name="garDato" type="xs:string" />
+      <xs:element minOccurs="0" name="garKm" type="xs:string" />
+      <xs:element minOccurs="0" name="gir" type="xs:string" />
+      <xs:element minOccurs="0" name="gruppeID" type="xs:int" />
+      <xs:element minOccurs="0" name="heftelser" type="xs:string" />
+      <xs:element minOccurs="0" name="helhetsInntr" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:string" />
+      <xs:element minOccurs="0" name="importertAv" type="xs:string" />
+      <xs:element minOccurs="0" name="instBok" type="xs:string" />
+      <xs:element minOccurs="0" name="intFarge" type="xs:string" />
+      <xs:element minOccurs="0" name="ipadress" type="xs:string" />
+      <xs:element minOccurs="0" name="jurEier" type="xs:string" />
+      <xs:element minOccurs="0" name="jurKundenr" type="xs:string" />
+      <xs:element minOccurs="0" name="kjGr" type="xs:string" />
+      <xs:element minOccurs="0" name="kjmerke" type="xs:string" />
+      <xs:element minOccurs="0" name="klargjoring" type="xs:string" />
+      <xs:element minOccurs="0" name="klargjoringForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="klient" type="xs:string" />
+      <xs:element minOccurs="0" name="kmStand" type="xs:string" />
+      <xs:element minOccurs="0" name="kmStandBekreftet" type="xs:string" />
+      <xs:element minOccurs="0" name="kollSkadet" type="xs:string" />
+      <xs:element minOccurs="0" name="kollisjonSkadet" type="xs:string" />
+      <xs:element minOccurs="0" name="kombi3d" type="xs:string" />
+      <xs:element minOccurs="0" name="kombi5d" type="xs:string" />
+      <xs:element minOccurs="0" name="kontrDato" type="xs:string" />
+      <xs:element minOccurs="0" name="kontraktsnr" type="xs:string" />
+      <xs:element minOccurs="0" name="korrKm" type="xs:string" />
+      <xs:element minOccurs="0" name="kundeNavn" type="xs:string" />
+      <xs:element minOccurs="0" name="kundenr" type="xs:string" />
+      <xs:element minOccurs="0" name="listepris" type="xs:string" />
+      <xs:element minOccurs="0" name="listeprisForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="MVA" type="xs:string" />
+      <xs:element minOccurs="0" name="merke" type="xs:string" />
+      <xs:element minOccurs="0" name="minibuss" type="xs:string" />
+      <xs:element minOccurs="0" name="mobil" type="xs:string" />
+      <xs:element minOccurs="0" name="modell" type="xs:string" />
+      <xs:element minOccurs="0" name="motorVol" type="xs:string" />
+      <xs:element minOccurs="0" name="motorytelse" type="xs:string" />
+      <xs:element minOccurs="0" name="mottatt" type="xs:string" />
+      <xs:element minOccurs="0" name="normKMForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="normalkjKM" type="xs:string" />
+      <xs:element minOccurs="0" name="nytteLast" type="xs:string" />
+      <xs:element minOccurs="0" name="ordrenummer" type="xs:string" />
+      <xs:element minOccurs="0" name="orgNokler" type="xs:string" />
+      <xs:element minOccurs="0" name="orgVognkort" type="xs:string" />
+      <xs:element minOccurs="0" name="p01" type="xs:string" />
+      <xs:element minOccurs="0" name="p02" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x1" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x10" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x11" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x2" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x3" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x4" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x5" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x6" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x7" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x8" type="xs:string" />
+      <xs:element minOccurs="0" name="p10x9" type="xs:string" />
+      <xs:element minOccurs="0" name="p111" type="xs:string" />
+      <xs:element minOccurs="0" name="p1110" type="xs:string" />
+      <xs:element minOccurs="0" name="p1111" type="xs:string" />
+      <xs:element minOccurs="0" name="p1112" type="xs:string" />
+      <xs:element minOccurs="0" name="p1113" type="xs:string" />
+      <xs:element minOccurs="0" name="p1114" type="xs:string" />
+      <xs:element minOccurs="0" name="p1115" type="xs:string" />
+      <xs:element minOccurs="0" name="p1116" type="xs:string" />
+      <xs:element minOccurs="0" name="p1117" type="xs:string" />
+      <xs:element minOccurs="0" name="p1118" type="xs:string" />
+      <xs:element minOccurs="0" name="p1119" type="xs:string" />
+      <xs:element minOccurs="0" name="p112" type="xs:string" />
+      <xs:element minOccurs="0" name="p1120" type="xs:string" />
+      <xs:element minOccurs="0" name="p1121" type="xs:string" />
+      <xs:element minOccurs="0" name="p1122" type="xs:string" />
+      <xs:element minOccurs="0" name="p1123" type="xs:string" />
+      <xs:element minOccurs="0" name="p113" type="xs:string" />
+      <xs:element minOccurs="0" name="p114" type="xs:string" />
+      <xs:element minOccurs="0" name="p115" type="xs:string" />
+      <xs:element minOccurs="0" name="p116" type="xs:string" />
+      <xs:element minOccurs="0" name="p117" type="xs:string" />
+      <xs:element minOccurs="0" name="p118" type="xs:string" />
+      <xs:element minOccurs="0" name="p119" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x1" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x2" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x3" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x4" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x5" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x6" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x7" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x8" type="xs:string" />
+      <xs:element minOccurs="0" name="p11x9" type="xs:string" />
+      <xs:element minOccurs="0" name="p121" type="xs:string" />
+      <xs:element minOccurs="0" name="p122" type="xs:string" />
+      <xs:element minOccurs="0" name="p123" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x1" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x10" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x11" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x12" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x13" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x14" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x15" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x2" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x3" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x4" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x5" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x6" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x7" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x8" type="xs:string" />
+      <xs:element minOccurs="0" name="p12x9" type="xs:string" />
+      <xs:element minOccurs="0" name="p21" type="xs:string" />
+      <xs:element minOccurs="0" name="p22" type="xs:string" />
+      <xs:element minOccurs="0" name="p23" type="xs:string" />
+      <xs:element minOccurs="0" name="p24" type="xs:string" />
+      <xs:element minOccurs="0" name="p31" type="xs:string" />
+      <xs:element minOccurs="0" name="p32" type="xs:string" />
+      <xs:element minOccurs="0" name="p33" type="xs:string" />
+      <xs:element minOccurs="0" name="p41" type="xs:string" />
+      <xs:element minOccurs="0" name="p410" type="xs:string" />
+      <xs:element minOccurs="0" name="p411" type="xs:string" />
+      <xs:element minOccurs="0" name="p412" type="xs:string" />
+      <xs:element minOccurs="0" name="p413" type="xs:string" />
+      <xs:element minOccurs="0" name="p414" type="xs:string" />
+      <xs:element minOccurs="0" name="p42" type="xs:string" />
+      <xs:element minOccurs="0" name="p43" type="xs:string" />
+      <xs:element minOccurs="0" name="p44" type="xs:string" />
+      <xs:element minOccurs="0" name="p45" type="xs:string" />
+      <xs:element minOccurs="0" name="p46" type="xs:string" />
+      <xs:element minOccurs="0" name="p47" type="xs:string" />
+      <xs:element minOccurs="0" name="p48" type="xs:string" />
+      <xs:element minOccurs="0" name="p49" type="xs:string" />
+      <xs:element minOccurs="0" name="p51" type="xs:string" />
+      <xs:element minOccurs="0" name="p52" type="xs:string" />
+      <xs:element minOccurs="0" name="p53" type="xs:string" />
+      <xs:element minOccurs="0" name="p54" type="xs:string" />
+      <xs:element minOccurs="0" name="p55" type="xs:string" />
+      <xs:element minOccurs="0" name="p56" type="xs:string" />
+      <xs:element minOccurs="0" name="p57" type="xs:string" />
+      <xs:element minOccurs="0" name="p58" type="xs:string" />
+      <xs:element minOccurs="0" name="p59" type="xs:string" />
+      <xs:element minOccurs="0" name="p61" type="xs:string" />
+      <xs:element minOccurs="0" name="p610" type="xs:string" />
+      <xs:element minOccurs="0" name="p611" type="xs:string" />
+      <xs:element minOccurs="0" name="p612" type="xs:string" />
+      <xs:element minOccurs="0" name="p613" type="xs:string" />
+      <xs:element minOccurs="0" name="p62" type="xs:string" />
+      <xs:element minOccurs="0" name="p63" type="xs:string" />
+      <xs:element minOccurs="0" name="p64" type="xs:string" />
+      <xs:element minOccurs="0" name="p65" type="xs:string" />
+      <xs:element minOccurs="0" name="p66" type="xs:string" />
+      <xs:element minOccurs="0" name="p67" type="xs:string" />
+      <xs:element minOccurs="0" name="p68" type="xs:string" />
+      <xs:element minOccurs="0" name="p69" type="xs:string" />
+      <xs:element minOccurs="0" name="p71" type="xs:string" />
+      <xs:element minOccurs="0" name="p72" type="xs:string" />
+      <xs:element minOccurs="0" name="p73" type="xs:string" />
+      <xs:element minOccurs="0" name="p74" type="xs:string" />
+      <xs:element minOccurs="0" name="p75" type="xs:string" />
+      <xs:element minOccurs="0" name="p76" type="xs:string" />
+      <xs:element minOccurs="0" name="p77" type="xs:string" />
+      <xs:element minOccurs="0" name="p78" type="xs:string" />
+      <xs:element minOccurs="0" name="p79" type="xs:string" />
+      <xs:element minOccurs="0" name="p81" type="xs:string" />
+      <xs:element minOccurs="0" name="p82" type="xs:string" />
+      <xs:element minOccurs="0" name="p83" type="xs:string" />
+      <xs:element minOccurs="0" name="p84" type="xs:string" />
+      <xs:element minOccurs="0" name="p9" type="xs:string" />
+      <xs:element minOccurs="0" name="piggDekk" type="xs:string" />
+      <xs:element minOccurs="0" name="postNr" type="xs:string" />
+      <xs:element minOccurs="0" name="postnrBruker" type="xs:string" />
+      <xs:element minOccurs="0" name="postnrJur" type="xs:string" />
+      <xs:element minOccurs="0" name="poststedBruker" type="xs:string" />
+      <xs:element minOccurs="0" name="poststedJur" type="xs:string" />
+      <xs:element minOccurs="0" name="prosentSalgsomkForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="reelPaakost" type="xs:string" />
+      <xs:element minOccurs="0" name="regAar" type="xs:string" />
+      <xs:element minOccurs="0" name="regAvg" type="xs:string" />
+      <xs:element minOccurs="0" name="regAvgiftNy" type="xs:string" />
+      <xs:element minOccurs="0" name="regDato" type="xs:string" />
+      <xs:element minOccurs="0" name="registreringsAar" type="xs:string" />
+      <xs:element minOccurs="0" name="salgsOmk" type="xs:string" />
+      <xs:element minOccurs="0" name="salgsomkFortj" type="xs:string" />
+      <xs:element minOccurs="0" name="salgsomkFortjForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="salgsomkProsent" type="xs:string" />
+      <xs:element minOccurs="0" name="salgsomkostningerForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="satsPrKmOver" type="xs:string" />
+      <xs:element minOccurs="0" name="satsPrKmOverForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="satsPrKmUnder" type="xs:string" />
+      <xs:element minOccurs="0" name="satsPrKmUnderForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="sdekkHB" type="xs:string" />
+      <xs:element minOccurs="0" name="sdekkHF" type="xs:string" />
+      <xs:element minOccurs="0" name="sdekkVB" type="xs:string" />
+      <xs:element minOccurs="0" name="sdekkVF" type="xs:string" />
+      <xs:element minOccurs="0" name="sedan" type="xs:string" />
+      <xs:element minOccurs="0" name="selger" type="xs:string" />
+      <xs:element minOccurs="0" name="servicehefte" type="xs:string" />
+      <xs:element minOccurs="0" name="sistGodkj" type="xs:string" />
+      <xs:element minOccurs="0" name="sistGodkjKmstand" type="xs:string" />
+      <xs:element minOccurs="0" name="sistReg" type="xs:string" />
+      <xs:element minOccurs="0" name="sisteService" type="xs:string" />
+      <xs:element minOccurs="0" name="sisteServiceDato" type="xs:string" />
+      <xs:element minOccurs="0" name="sisteServiceKmstand" type="xs:string" />
+      <xs:element minOccurs="0" name="skiftetRegRemDato" type="xs:string" />
+      <xs:element minOccurs="0" name="skiftetRegRemKmstand" type="xs:string" />
+      <xs:element minOccurs="0" name="skyldAvg" type="xs:string" />
+      <xs:element minOccurs="0" name="slettet" type="xs:string" />
+      <xs:element minOccurs="0" name="stasjVogn" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+      <xs:element minOccurs="0" name="sted" type="xs:string" />
+      <xs:element minOccurs="0" name="stoy" type="xs:string" />
+      <xs:element minOccurs="0" name="sum" type="xs:string" />
+      <xs:element minOccurs="0" name="sumForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="sumInklMVA" type="xs:string" />
+      <xs:element minOccurs="0" name="sumPaakost" type="xs:string" />
+      <xs:element name="takstType" type="xs:int" />
+      <xs:element minOccurs="0" name="takstmann" type="xs:string" />
+      <xs:element minOccurs="0" name="tidlSkade" type="xs:string" />
+      <xs:element minOccurs="0" name="tidlTakstnr" type="xs:string" />
+      <xs:element minOccurs="0" name="tidligereBruk" type="xs:int" />
+      <xs:element minOccurs="0" name="tilhVktMbrems" type="xs:string" />
+      <xs:element minOccurs="0" name="tilhVktUbrems" type="xs:string" />
+      <xs:element minOccurs="0" name="tilleggUnderkjKM" type="xs:string" />
+      <xs:element minOccurs="0" name="tilleggUnderkjKMForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="tilleggUtstyr" type="xs:string" />
+      <xs:element minOccurs="0" name="tilleggUtstyrForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="tlfArb" type="xs:string" />
+      <xs:element minOccurs="0" name="tlfBruker" type="xs:string" />
+      <xs:element minOccurs="0" name="tlfJur" type="xs:string" />
+      <xs:element minOccurs="0" name="tlfPriv" type="xs:string" />
+      <xs:element minOccurs="0" name="trekkFarge" type="xs:string" />
+      <xs:element minOccurs="0" name="trekkFargeForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="trekkOverkjKM" type="xs:string" />
+      <xs:element minOccurs="0" name="trekkOverkjKMForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="trekkRegForhold" type="xs:string" />
+      <xs:element minOccurs="0" name="trekkRegForholdForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="trekkUtstyr" type="xs:string" />
+      <xs:element minOccurs="0" name="trekkUtstyrForkalk" type="xs:string" />
+      <xs:element minOccurs="0" name="ts" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="ustNr" type="xs:string" />
+      <xs:element minOccurs="0" name="varebil" type="xs:string" />
+      <xs:element minOccurs="0" name="variant" type="xs:string" />
+      <xs:element minOccurs="0" name="vdekkHB" type="xs:string" />
+      <xs:element minOccurs="0" name="vdekkHF" type="xs:string" />
+      <xs:element minOccurs="0" name="vdekkVB" type="xs:string" />
+      <xs:element minOccurs="0" name="vdekkVF" type="xs:string" />
+      <xs:element minOccurs="0" name="vekt" type="xs:string" />
+      <xs:element minOccurs="0" name="versjon" type="xs:string" />
+      <xs:element minOccurs="0" name="ytelseBenevn" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="orderStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="orderNo" type="xs:string" />
+      <xs:element name="orderType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="orderStatusResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:kundeOrderStatusResultWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kundeOrderStatusResultWS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:kundeOrdreResultWS">
+        <xs:sequence>
+          <xs:element name="number" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="orderStatus" nillable="true" type="tns:kundeOrderStatusDataWS" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="kundeOrdreResultWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="resultText" type="xs:string" />
+      <xs:element name="status" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kundeOrderStatusDataWS">
+    <xs:sequence>
+      <xs:element name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="kontrollID" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vehicleSearch">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="params" type="tns:vehicleSearchWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vehicleSearchWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="brandName" type="xs:string" />
+      <xs:element minOccurs="0" name="chassisNumber" type="xs:string" />
+      <xs:element name="countryCode" type="xs:int" />
+      <xs:element minOccurs="0" name="modelDesc" type="xs:string" />
+      <xs:element minOccurs="0" name="regYearFrom" type="xs:string" />
+      <xs:element minOccurs="0" name="regYearTo" type="xs:string" />
+      <xs:element minOccurs="0" name="searchPos" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="vehicleGroup" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vehicleSearchResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:vehicleSearchResultWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vehicleSearchResultWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="match" nillable="true" type="tns:bildataVO" />
+      <xs:element name="status" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bildataVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="akseltrykkBak" type="xs:string" />
+      <xs:element minOccurs="0" name="akseltrykkForan" type="xs:string" />
+      <xs:element minOccurs="0" name="antAksler" type="xs:string" />
+      <xs:element minOccurs="0" name="antAkslerDrift" type="xs:string" />
+      <xs:element minOccurs="0" name="avregDato" type="xs:string" />
+      <xs:element minOccurs="0" name="bredde" type="xs:string" />
+      <xs:element minOccurs="0" name="bruktimport" type="xs:string" />
+      <xs:element minOccurs="0" name="co2Utslipp" type="xs:string" />
+      <xs:element minOccurs="0" name="drivendeHjul" type="xs:string" />
+      <xs:element minOccurs="0" name="drivstoff" type="xs:string" />
+      <xs:element minOccurs="0" name="EUvariant" type="xs:string" />
+      <xs:element minOccurs="0" name="EUversjon" type="xs:string" />
+      <xs:element minOccurs="0" name="egenvekt" type="xs:string" />
+      <xs:element minOccurs="0" name="euHovednummer" type="xs:string" />
+      <xs:element minOccurs="0" name="euronorm" type="xs:string" />
+      <xs:element minOccurs="0" name="fabPartFilter" type="xs:string" />
+      <xs:element minOccurs="0" name="farge" type="xs:string" />
+      <xs:element minOccurs="0" name="fjernet" type="xs:string" />
+      <xs:element minOccurs="0" name="girkasse" type="xs:string" />
+      <xs:element minOccurs="0" name="gyldigFraUnr" type="xs:string" />
+      <xs:element minOccurs="0" name="identitetAnm" type="xs:string" />
+      <xs:element minOccurs="0" name="kjennemerke" type="xs:string" />
+      <xs:element minOccurs="0" name="kjoretoygruppe" type="xs:string" />
+      <xs:element minOccurs="0" name="lengde" type="xs:string" />
+      <xs:element minOccurs="0" name="lngdTilhKobl" type="xs:string" />
+      <xs:element minOccurs="0" name="maksSporvBak" type="xs:string" />
+      <xs:element minOccurs="0" name="maksSporvForan" type="xs:string" />
+      <xs:element minOccurs="0" name="maxBelTilhFeste" type="xs:string" />
+      <xs:element minOccurs="0" name="maxTaklast" type="xs:string" />
+      <xs:element minOccurs="0" name="merkeNavn" type="xs:string" />
+      <xs:element minOccurs="0" name="merkekode" type="xs:string" />
+      <xs:element minOccurs="0" name="minHastBak" type="xs:string" />
+      <xs:element minOccurs="0" name="minHastForan" type="xs:string" />
+      <xs:element minOccurs="0" name="minInnpressBak" type="xs:string" />
+      <xs:element minOccurs="0" name="minInnpressForan" type="xs:string" />
+      <xs:element minOccurs="0" name="minLIbak" type="xs:string" />
+      <xs:element minOccurs="0" name="minLIforan" type="xs:string" />
+      <xs:element minOccurs="0" name="modellbetegnelse" type="xs:string" />
+      <xs:element minOccurs="0" name="motormerking" type="xs:string" />
+      <xs:element minOccurs="0" name="motorytelse" type="xs:string" />
+      <xs:element minOccurs="0" name="nestePKK" type="xs:string" />
+      <xs:element minOccurs="0" name="omdreininger" type="xs:string" />
+      <xs:element minOccurs="0" name="rammeKarosseri" type="xs:string" />
+      <xs:element minOccurs="0" name="regAAr" type="xs:string" />
+      <xs:element minOccurs="0" name="regFgang" type="xs:string" />
+      <xs:element minOccurs="0" name="regFoerstegNorge" type="xs:string" />
+      <xs:element minOccurs="0" name="sistPKKgodkj" type="xs:string" />
+      <xs:element minOccurs="0" name="sisteRegDato" type="xs:string" />
+      <xs:element minOccurs="0" name="sitteplasser" type="xs:string" />
+      <xs:element minOccurs="0" name="slagvolum" type="xs:string" />
+      <xs:element minOccurs="0" name="standStoy" type="xs:string" />
+      <xs:element minOccurs="0" name="stdDekkBak" type="xs:string" />
+      <xs:element minOccurs="0" name="stdDekkForan" type="xs:string" />
+      <xs:element minOccurs="0" name="stdFelgBak" type="xs:string" />
+      <xs:element minOccurs="0" name="stdFelgForan" type="xs:string" />
+      <xs:element minOccurs="0" name="tilhVktMbrems" type="xs:string" />
+      <xs:element minOccurs="0" name="tilhVktUbrems" type="xs:string" />
+      <xs:element minOccurs="0" name="totalvekt" type="xs:string" />
+      <xs:element minOccurs="0" name="typebetegnelse" type="xs:string" />
+      <xs:element minOccurs="0" name="typegodkjenningsnr" type="xs:string" />
+      <xs:element minOccurs="0" name="understellsnummer" type="xs:string" />
+      <xs:element minOccurs="0" name="vognkortAnm" type="xs:string" />
+      <xs:element minOccurs="0" name="vogntogvekt" type="xs:string" />
+      <xs:element minOccurs="0" name="ytelseBenevn" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="data" type="tns:kundeOrdreDataWS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="kundeOrdreDataWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adresse" type="xs:string" />
+      <xs:element minOccurs="0" name="ekstra1" type="xs:string" />
+      <xs:element minOccurs="0" name="epost" type="xs:string" />
+      <xs:element minOccurs="0" name="etternavn" type="xs:string" />
+      <xs:element minOccurs="0" name="fornavn" type="xs:string" />
+      <xs:element minOccurs="0" name="kjMerke" type="xs:string" />
+      <xs:element minOccurs="0" name="kundeNo" type="xs:string" />
+      <xs:element minOccurs="0" name="kundenavn" type="xs:string" />
+      <xs:element minOccurs="0" name="mobil" type="xs:string" />
+      <xs:element minOccurs="0" name="ordreEier" type="xs:string" />
+      <xs:element minOccurs="0" name="ordreNr" type="xs:string" />
+      <xs:element minOccurs="0" name="ordreSystem" type="xs:string" />
+      <xs:element minOccurs="0" name="ordreType" type="xs:string" />
+      <xs:element minOccurs="0" name="ordredato" type="xs:string" />
+      <xs:element minOccurs="0" name="postnr" type="xs:string" />
+      <xs:element minOccurs="0" name="poststed" type="xs:string" />
+      <xs:element minOccurs="0" name="rekvAv" type="xs:string" />
+      <xs:element minOccurs="0" name="telefon" type="xs:string" />
+      <xs:element minOccurs="0" name="undertype" type="xs:string" />
+      <xs:element minOccurs="0" name="utforesAv" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addOrderResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:kundeOrdreResultWS" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

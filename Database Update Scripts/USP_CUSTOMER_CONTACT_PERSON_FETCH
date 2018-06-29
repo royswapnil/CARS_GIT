@@ -1,0 +1,76 @@
+GO
+/****** Object:  StoredProcedure [dbo].[USP_CUSTOMER_CONTACT_PERSON_FETCH]    Script Date: 27/05/2016 11:14:52 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+IF NOT EXISTS (
+	SELECT * 
+	FROM sys.objects 
+	WHERE type = 'P' AND name = 'USP_CUSTOMER_CONTACT_PERSON_FETCH'
+	)
+	BEGIN
+		EXEC('CREATE PROCEDURE [dbo].[USP_CUSTOMER_CONTACT_PERSON_FETCH] 
+			  AS 
+			  BEGIN 
+				  SET NOCOUNT ON; 
+			  END'
+		)
+	END
+
+-- =============================================
+-- Author:		Thomas Won Nyheim (TWN)
+-- Create date: 2016/05/27
+-- Description:	Fetches all or specific contact person
+-- =============================================
+GO
+
+ALTER PROCEDURE [dbo].USP_CUSTOMER_CONTACT_PERSON_FETCH (
+	@ID_CP				VARCHAR(50) = NULL
+	,@CP_CUSTOMER_ID	VARCHAR(50) = NULL
+	--,@RETVAL			VARCHAR(10) OUTPUT
+)
+AS
+
+SELECT [ID_CP]
+      ,[CP_CUSTOMER_ID]
+      ,[CP_FIRST_NAME]
+      ,[CP_MIDDLE_NAME]
+      ,[CP_LAST_NAME]
+      ,[CP_PERM_ADD]
+      ,[CP_VISIT_ADD]
+      ,[CP_ZIP_CODE]
+      ,[CP_ZIP_CITY]
+      ,[CP_EMAIL]
+      ,[CP_PHONE_PRIVATE]
+      ,[CP_PHONE_MOBILE]
+      ,[CP_PHONE_FAX]
+      ,[CP_PHONE_WORK]
+      ,[CP_BIRTH_DATE]
+      ,[CP_ID_TITLE]
+      ,[CP_ID_FUNCTION]
+      ,[CP_CONTACT]
+      ,[CP_CAR_USER]
+      ,[CP_EMAIL_REF]
+      ,[CP_NOTES]
+      ,[CREATED_BY]
+      ,[DT_CREATED]
+      ,[MODIFIED_BY]
+      ,[DT_MODIFIED]
+  FROM [dbo].[TBL_MAS_CUSTOMER_CONTACT_PERSON]
+  WHERE 
+	CAST(ID_CP as varchar) LIKE
+	CASE WHEN @ID_CP IS NULL THEN
+		'%'
+	ELSE
+		@ID_CP
+	END
+	AND
+	CAST(CP_CUSTOMER_ID as varchar) LIKE
+	CASE WHEN @CP_CUSTOMER_ID IS NULL THEN
+		'%'
+	ELSE
+		@CP_CUSTOMER_ID
+	END

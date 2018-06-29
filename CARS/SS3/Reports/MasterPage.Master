@@ -1,0 +1,79 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.master.vb" Inherits="CARS.MasterPage1" %>
+<%@ Register Src="~/UserCtrl/ucTopBannerMain.ascx" TagName="ucTopBannerMain" TagPrefix="uc1" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%--<script src="<%# ResolveUrl("~/Scripts/jquery-2.1.4.min.js")%>"></script>
+    <script src="<%# ResolveUrl("~/javascripts/jquery-migrate-1.2.1.js")%>"></script>
+    <script src="<%# ResolveUrl("~/Scripts/jquery-ui-1.11.4.min.js")%>"></script>
+    <script src="<%# ResolveUrl("~/Scripts/datepicker-no.js")%>"></script>
+    <script src="<%# ResolveUrl("~/Scripts/semantic.min.js")%>"></script>
+    <script src="<%# ResolveUrl("~/javascripts/grid.locale-no.js")%>"></script>
+    <script src="<%# ResolveUrl("~/javascripts/grid.locale-no.js")%>"></script> 
+    <script src="<%# ResolveUrl("~/javascripts/jquery.jqGrid.min.js")%>"></script> 
+    <script src="<%# ResolveUrl("~/Scripts/cars.js")%>"></script>
+    <script src="<%# ResolveUrl("~/javascripts/json2-min.js")%>"></script>
+    <script src="<%# ResolveUrl("~/javascripts/Msg.js")%>"></script>
+    <link href="<%# ResolveUrl("~/CSS/jquery-ui.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%# ResolveUrl("~/Content/ui.jqgrid.css")%>" rel="stylesheet" />
+    <link href="<%# ResolveUrl("~/Content/themes/base/all.css")%>" rel="stylesheet" />
+    <link href="<%# ResolveUrl("~/Content/semantic.css")%>" rel="stylesheet" />
+    <link href="<%# ResolveUrl("~/CSS/Msg.css")%>" rel="stylesheet" type="text/css" />
+    <script src="<%# ResolveUrl("~/Scripts/jquery.contextMenu.min.js")%>"></script>
+    <link href="<%# ResolveUrl("~/CSS/jquery.contextMenu.min.css")%>" rel="stylesheet" type="text/css"  />
+    <script src="<%# ResolveUrl("~/Scripts/jquery-ui-1.11.4.js")%>"></script>--%>
+     <link href="../../Content/semantic.css" rel="stylesheet" />
+    <script src="../../javascripts/MsgReports.js"></script>
+    <link href="../../CSS/Msg.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <uc1:ucTopBannerMain ID="UcTopBannerMain1" runat="server" />
+          <div id="carsWrapper">
+            <div id="carsSideBar">
+                <div id="navigation" class="ui secondary vertical menu">
+                    <i id="click" class="align justify icon"></i>
+                    <div class="carsPin">
+                        <i class="pin icon"></i>
+                        <input id="pin" type="checkbox" name="pin" value="pin" />
+                    </div>
+                    <a id="a1" onclick="SetURL(this);" href="Transactions/frmWOSearch.aspx" name="a1" runat="server" class="item active">
+                        <asp:Label ID="lblReserveOrd" runat="server" Text="Dashboard" meta:resourcekey="lblReserveOrdResource1"></asp:Label>
+                    </a>
+
+                    <a id="a2" onclick="SetURL(this);" href="master/frmCustomerDetail.aspx" name="a2" runat="server" class="item active">
+                        <asp:Label ID="Label1" runat="server" Text="Kunder" meta:resourcekey="Label1Resource1"></asp:Label>
+                    </a>
+
+                    <a id="a3" href="master/frmVehicleDetail.aspx" name="a3" runat="server" class="item">
+                        <asp:Label ID="Label2" runat="server" Text="Kjøretøy" meta:resourcekey="Label2Resource1"></asp:Label>
+                    </a>
+
+                    <a id="a4" onclick="SetURL(this);" href="SS3/LocalSPSearch.aspx" name="a4" runat="server" class="item">
+                        <asp:Label ID="Label3" runat="server" Text="Deler" meta:resourcekey="Label3Resource1"></asp:Label>
+                    </a>
+
+                    <a id="a5" onclick="SetURL(this);" href="Transactions/frmRepairPackage.aspx" name="a5" runat="server" class="item">
+                        <asp:Label ID="Label4" runat="server" Text="Pakker" meta:resourcekey="Label4Resource1"></asp:Label>
+                    </a>
+
+                    <a id="a6" onclick="SetURL(this);" href="Transactions/frmGP_DragDrop.aspx" name="a5" runat="server" class="item">
+                        <asp:Label ID="Label5" runat="server" Text="Avtaler" meta:resourcekey="Label5Resource1"></asp:Label>
+                    </a>
+                    <div id="on-hover"></div>
+                </div>
+            </div>
+
+            <div id="carsContent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" Visible="true">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

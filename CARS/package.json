@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {
+    "bower": "1.7.9"
+  },
+  "dependencies": {
+    "jquery.tabulator": "^3.3.2"
+  }
+}

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://WS.ems.inputdata.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="emsService" targetNamespace="http://WS.ems.inputdata.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://app.pkk.no:80/ems?xsd=1" namespace="http://WS.ems.inputdata.com/" />
+    </xsd:schema>
+  </types>
+  <message name="getTakstData">
+    <part name="parameters" element="tns:getTakstData" />
+  </message>
+  <message name="getTakstDataResponse">
+    <part name="parameters" element="tns:getTakstDataResponse" />
+  </message>
+  <message name="getTstandData">
+    <part name="parameters" element="tns:getTstandData" />
+  </message>
+  <message name="getTstandDataResponse">
+    <part name="parameters" element="tns:getTstandDataResponse" />
+  </message>
+  <message name="getPDF">
+    <part name="parameters" element="tns:getPDF" />
+  </message>
+  <message name="getPDFResponse">
+    <part name="parameters" element="tns:getPDFResponse" />
+  </message>
+  <message name="controlsByDate">
+    <part name="parameters" element="tns:controlsByDate" />
+  </message>
+  <message name="controlsByDateResponse">
+    <part name="parameters" element="tns:controlsByDateResponse" />
+  </message>
+  <message name="addOrder">
+    <part name="parameters" element="tns:addOrder" />
+  </message>
+  <message name="addOrderResponse">
+    <part name="parameters" element="tns:addOrderResponse" />
+  </message>
+  <message name="orderStatus">
+    <part name="parameters" element="tns:orderStatus" />
+  </message>
+  <message name="orderStatusResponse">
+    <part name="parameters" element="tns:orderStatusResponse" />
+  </message>
+  <message name="orderDelete">
+    <part name="parameters" element="tns:orderDelete" />
+  </message>
+  <message name="orderDeleteResponse">
+    <part name="parameters" element="tns:orderDeleteResponse" />
+  </message>
+  <message name="vehicleSearch">
+    <part name="parameters" element="tns:vehicleSearch" />
+  </message>
+  <message name="vehicleSearchResponse">
+    <part name="parameters" element="tns:vehicleSearchResponse" />
+  </message>
+  <message name="insertExtraVehicleInfo">
+    <part name="parameters" element="tns:insertExtraVehicleInfo" />
+  </message>
+  <message name="insertExtraVehicleInfoResponse">
+    <part name="parameters" element="tns:insertExtraVehicleInfoResponse" />
+  </message>
+  <message name="insertExtraVehicleOptions">
+    <part name="parameters" element="tns:insertExtraVehicleOptions" />
+  </message>
+  <message name="insertExtraVehicleOptionsResponse">
+    <part name="parameters" element="tns:insertExtraVehicleOptionsResponse" />
+  </message>
+  <message name="vkData">
+    <part name="parameters" element="tns:vkData" />
+  </message>
+  <message name="vkDataResponse">
+    <part name="parameters" element="tns:vkDataResponse" />
+  </message>
+  <message name="vkDataVask">
+    <part name="parameters" element="tns:vkDataVask" />
+  </message>
+  <message name="vkDataVaskResponse">
+    <part name="parameters" element="tns:vkDataVaskResponse" />
+  </message>
+  <message name="getProspectData">
+    <part name="parameters" element="tns:getProspectData" />
+  </message>
+  <message name="getProspectDataResponse">
+    <part name="parameters" element="tns:getProspectDataResponse" />
+  </message>
+  <portType name="ems">
+    <operation name="getTakstData">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/getTakstDataRequest" message="tns:getTakstData" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/getTakstDataResponse" message="tns:getTakstDataResponse" />
+    </operation>
+    <operation name="getTstandData">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/getTstandDataRequest" message="tns:getTstandData" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/getTstandDataResponse" message="tns:getTstandDataResponse" />
+    </operation>
+    <operation name="getPDF">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/getPDFRequest" message="tns:getPDF" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/getPDFResponse" message="tns:getPDFResponse" />
+    </operation>
+    <operation name="controlsByDate">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/controlsByDateRequest" message="tns:controlsByDate" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/controlsByDateResponse" message="tns:controlsByDateResponse" />
+    </operation>
+    <operation name="addOrder">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/addOrderRequest" message="tns:addOrder" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/addOrderResponse" message="tns:addOrderResponse" />
+    </operation>
+    <operation name="orderStatus">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/orderStatusRequest" message="tns:orderStatus" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/orderStatusResponse" message="tns:orderStatusResponse" />
+    </operation>
+    <operation name="orderDelete">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/orderDeleteRequest" message="tns:orderDelete" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/orderDeleteResponse" message="tns:orderDeleteResponse" />
+    </operation>
+    <operation name="vehicleSearch">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/vehicleSearchRequest" message="tns:vehicleSearch" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/vehicleSearchResponse" message="tns:vehicleSearchResponse" />
+    </operation>
+    <operation name="insertExtraVehicleInfo">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/insertExtraVehicleInfoRequest" message="tns:insertExtraVehicleInfo" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/insertExtraVehicleInfoResponse" message="tns:insertExtraVehicleInfoResponse" />
+    </operation>
+    <operation name="insertExtraVehicleOptions">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/insertExtraVehicleOptionsRequest" message="tns:insertExtraVehicleOptions" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/insertExtraVehicleOptionsResponse" message="tns:insertExtraVehicleOptionsResponse" />
+    </operation>
+    <operation name="vkData">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/vkDataRequest" message="tns:vkData" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/vkDataResponse" message="tns:vkDataResponse" />
+    </operation>
+    <operation name="vkDataVask">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/vkDataVaskRequest" message="tns:vkDataVask" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/vkDataVaskResponse" message="tns:vkDataVaskResponse" />
+    </operation>
+    <operation name="getProspectData">
+      <input wsam:Action="http://WS.ems.inputdata.com/ems/getProspectDataRequest" message="tns:getProspectData" />
+      <output wsam:Action="http://WS.ems.inputdata.com/ems/getProspectDataResponse" message="tns:getProspectDataResponse" />
+    </operation>
+  </portType>
+  <binding name="emsPortBinding" type="tns:ems">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getTakstData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTstandData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPDF">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="controlsByDate">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addOrder">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="orderStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="orderDelete">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vehicleSearch">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertExtraVehicleInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertExtraVehicleOptions">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vkData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="vkDataVask">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getProspectData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="emsService">
+    <port name="emsPort" binding="tns:emsPortBinding">
+      <soap:address location="http://app.pkk.no:80/ems" />
+    </port>
+  </service>
+</definitions>

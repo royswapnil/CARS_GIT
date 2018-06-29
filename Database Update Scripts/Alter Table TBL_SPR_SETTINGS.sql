@@ -1,0 +1,1 @@
+Alter Table TBL_SPR_SETTINGS alter column ID_SUPPLIER VARCHAR(100)
