@@ -57,7 +57,7 @@
                 $('.ih-year').removeClass('active');
                 $('.ih-year[data-year="' + year + '"]').addClass('active');
             }
-            function buildItemHistory() { // builds the grid for the item history with all values as 0, also builds the dropdowns for selecting years
+            function buildItemHistory() { // builds the grid for the item history with all values as 0 and also builds the dropdowns for selecting years
                 var currentYear = new Date().getFullYear();
                 var years = [currentYear];
                 var months = ['Januar', 'Februar', 'Mars', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Desember'];
